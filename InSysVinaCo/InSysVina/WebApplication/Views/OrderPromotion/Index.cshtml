@@ -1,0 +1,52 @@
+﻿@using LIB.Warehouses
+@using WebApplication.Authorize
+@{
+    ViewBag.Title = "Danh sách đơn hàng có khuyến mại";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var AllWarehouse = ViewBag.AllWarehouse as List<WarehousesEntity>;
+    var acc = User as CustomPrincipal;
+}
+@section styles_plugins{
+    <link href="~/Content/css/bootstrap-table.min.css" rel="stylesheet" />
+    <link href="~/Content/css/select2.min.css" rel="stylesheet" />
+}
+@section scripts_plugins{
+    <script src="~/Content/js/bootstrap-table.min.js"></script>
+    <script src="~/Content/js/bootstrap-table-vi-VN.min.js"></script>
+    <script src="~/Content/js/select2.full.min.js"></script>
+}
+@section scripts{
+    <script src="~/Scripts/controller/OrderPromotion.js"></script>
+}
+<div class="panel panel-info">
+    <div class="panel-heading">
+        Danh sách đơn hàng có khuyến mại
+    </div>
+    <div class="panel-body">
+        <div id="toolbar">
+            <form id="filter" class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        @if (acc.IsSupperAdmin)
+                        {
+                            <span class="input-group-addon">ShowRoom</span>
+                            <select class="form-control" id="drdWarehouse">
+                                <option>Tất cả</option>
+                                @foreach (var item in AllWarehouse)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </select>
+                        }
+                        <span class="input-group-btn">
+                            <a href="/OrderPromotion/Create" class="btn btn-primary">Thêm mới</a>
+                        </span>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <table id="tblData" class="table" data-toolbar="#toolbar"></table>
+    </div>
+</div>
+

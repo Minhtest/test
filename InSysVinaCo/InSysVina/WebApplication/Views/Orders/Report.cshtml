@@ -1,0 +1,148 @@
+﻿@using LIB.Warehouses
+@using WebApplication.Authorize
+@{
+    /**/
+
+    ViewBag.Title = "Report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var acc = User as CustomPrincipal;
+    var AllWarehouse = ViewBag.AllWarehouse as List<WarehousesEntity>;
+}
+@section styles_plugins{
+    <link href="~/Content/css/bootstrap-table.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap-datepicker3.min.css" />
+    <link href="~/Content/css/select2.min.css" rel="stylesheet" />
+}
+@section scripts_plugins{
+    <script src="~/Content/js/bootstrap-table.min.js"></script>
+    <script src="~/Content/js/bootstrap-table-vi-VN.min.js"></script>
+
+    <script src="~/Content/js/select2.full.min.js"></script>
+}
+@section scripts{
+    <script src="~/Scripts/controller/OrdersReport.js"></script>
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="clearfix">
+            <div class="pull-left">
+                <h5> Báo Cáo Đơn Hàng</h5>
+            </div>
+            <div class="pull-right">
+                <button class="btn btn-primary btn-sm" id="btnPrint">In báo cáo</button>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div id="toolbar">
+            <div class="row">
+                <div class="col-sm-6">
+                    @if (acc.IsSupperAdmin)
+                    {
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">ShowRoom</span>
+                                    <select class="form-control" id="drdWarehouse">
+                                        <option>Tất Cả</option>
+                                        @foreach (var item in AllWarehouse)
+                                        {
+                                            <option value="@item.Id">@item.Name</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="control-label" style="margin-bottom:2px;">Loại báo cáo:</label>
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-default active">
+                                    <input type="radio" name="opType" value="0" checked>
+                                    Hôm nay
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" name="opType" value="1">
+                                    Tháng này
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" name="opType" value="2">
+                                    Năm nay
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" name="opType" value="3">
+                                    Tùy chỉnh
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12" id="customDate" hidden>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">Từ ngày</div>
+                                <input id="startdate" class="form-control" datepicker />
+                                <div class="input-group-addon">Đến ngày</div>
+                                <input id="enddate" class="form-control" datepicker />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <label class="control-label" style="margin-bottom:2px;">Lọc khác: </label>
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <label class="btn btn-default">
+                                            <input type="checkbox" id="checkQuest" name="opQuest">
+                                            Khách vãng lai
+                                        </label>
+                                        <label class="btn btn-default">
+                                            <input type="checkbox" id="checkPayCash" name="opPayCash">
+                                            Trả bằng tiền mặt
+                                        </label>
+                                        <label class="btn btn-default">
+                                            <input type="checkbox" id="checkPayByCard" name="opPayByCard">
+                                            Trả bằng thẻ
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        >> Tổng tiền: <b style="color:red" id="sumGrandTodal">0</b>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="col-sm-12">
+                        <div class="input-group">
+                            <span class="input-group-addon">Khách hàng</span>
+                            <select id="selectCustomer" class="form-control"></select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="input-group">
+                            <span class="input-group-addon">Người tạo</span>
+                            <select id="selectCreated" class="form-control"></select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="input-group">
+                            <input type="text" id="txtsearch" class="form-control" placeholder="Nhập mã đơn hàng | Tên khách hàng | Người dùng" />
+                            <div class="input-group-btn">
+                                <button class="btn btn-primary" id="btnSearch" type="button"><i class="fas fa-search"></i></button>
+                                <button class="btn btn-primary" id="btnExportExcel" type="button" style="margin-left:15px">Xuất Excel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table id="tblOrdersReport"></table>
+    </div>
+</div>
+<div id="BillContent" style="display:none"></div>
+
+@Html.Partial("_OrderDetail", new LIB.CustomerEntity())

@@ -1,0 +1,81 @@
+﻿@model LIB.UserEntity
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Login - Admin InSysVn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="~/Assets/images/Card INSYS-02.png">
+    <link rel="stylesheet" href="~/Assets/admin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Assets/admin/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Assets/admin/css/themify-icons.css">
+    <link rel="stylesheet" href="~/Assets/admin/css/metisMenu.css">
+    <link rel="stylesheet" href="~/Assets/admin/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Assets/admin/css/slicknav.min.css">
+    <!-- amchart css -->
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <!-- others css -->
+    <link rel="stylesheet" href="~/Assets/admin/css/typography.css">
+    <link rel="stylesheet" href="~/Assets/admin/css/default-css.css">
+    <link rel="stylesheet" href="~/Assets/admin/css/styles.css">
+    <link rel="stylesheet" href="~/Assets/admin/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="~/Assets/admin/js/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- preloader area start -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- login area start -->
+    <div class="login-area">
+        <div class="container">
+            <div class="login-box ptb--100">
+                <form>
+                    <div class="login-form-head">
+                        <h4>Đăng nhập</h4>
+                        <p>Quản lý trang web InSys Vina</p>
+                    </div>
+                    <div class="login-form-body">
+                        @using (Html.BeginForm("Index", "Login",new { area = "Admin" }, FormMethod.Post, new { id = "frmLogin" }))
+                        {
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.UserName)
+                                <fieldset>
+                                    @Html.TextBoxFor(m => m.UserName, new { @data_validation_required_message = "Vui lòng nhập tên đăng nhập.", @class = "form-control", @required = "required" })
+                                </fieldset>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Password)
+                                <fieldset>
+                                    @Html.TextBoxFor(m => m.Password, new { @type = "password", @data_validation_required_message = "Vui lòng nhập tên đăng nhập.", @class = "form-control", @required = "required" })
+                                </fieldset>
+                            </div>
+                            <button type="submit" class="btn" style="margin-left:115px"><i class="fas fa-sign-in-alt"></i> Đăng Nhập</button>
+                        }
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- login area end -->
+    <!-- jquery latest version -->
+    <script src="~/Assets/admin/js/jquery-2.2.4.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script src="~/Assets/admin/js/popper.min.js"></script>
+    <script src="~/Assets/admin/js/bootstrap.min.js"></script>
+    <script src="~/Assets/admin/js/owl.carousel.min.js"></script>
+    <script src="~/Assets/admin/js/metisMenu.min.js"></script>
+    <script src="~/Assets/admin/js/jquery.slimscroll.min.js"></script>
+    <script src="~/Assets/admin/js/jquery.slicknav.min.js"></script>
+
+    <!-- others plugins -->
+    <script src="~/Assets/admin/js/plugins.js"></script>
+    <script src="~/Assets/admin/js/scripts.js"></script>
+</body>
+</html>

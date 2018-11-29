@@ -1,0 +1,50 @@
+﻿@using LIB.Warehouses
+@using WebApplication.Authorize
+@{
+    ViewBag.Title = "Danh sách trả hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var AllWarehouse = ViewBag.AllWarehouse as List<WarehousesEntity>;
+    var acc = User as CustomPrincipal;
+}
+@section styles_plugins{
+    <link href="~/Content/css/bootstrap-table.min.css" rel="stylesheet" />
+}
+@section scripts_plugins{
+    <script src="~/Content/js/bootstrap-table.min.js"></script>
+    <script src="~/Content/js/bootstrap-table-vi-VN.min.js"></script>
+}
+@section scripts{
+    <script src="~/Scripts/controller/Return.js"></script>
+}
+<div class="panel panel-default">
+    <div class="panel-heading">DANH SÁCH HÀNG TRẢ</div>
+    <div class="panel-body">
+        <div id="toolbar">
+            <form id="filter" class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        @if (acc.IsSupperAdmin)
+                        {
+                            <span class="input-group-addon">ShowRoom</span>
+                            <select class="form-control" id="drdWarehouse">
+                                <option>Tất cả</option>
+                                @foreach (var item in AllWarehouse)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </select>
+                        }
+                        <span class="input-group-btn">
+                            <a href="/Return/Create" class="btn btn-primary">Thêm mới</a>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table" id="tblReturn"></table>
+            </div>
+        </div>
+    </div>
+</div>

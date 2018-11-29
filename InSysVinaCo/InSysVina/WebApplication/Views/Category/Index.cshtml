@@ -1,0 +1,73 @@
+﻿@using LIB
+@using WebApplication.Authorize
+@{
+    /**/
+    ViewBag.Title = "Danh mục sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var list = ViewBag.listCategory as List<CategoryEntity>;
+    var acc = User as CustomPrincipal;
+}
+@section styles_plugins{
+    <link rel="stylesheet" type="text/css" href="~/Content/css/jquery.treegrid.css" />
+}
+@section scripts_plugins{
+    <script src="~/Content/js/jquery.treegrid.min.js"></script>
+    <script src="~/Scripts/controller/Category.js"></script>
+}
+@section scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#tblCategory").treegrid({ initialState: 'collapsed' });
+        })
+    </script>
+}
+<div class="panel panel-info">
+    <div class="panel-heading">
+        QUẢN LÝ DANH MỤC
+    </div>
+    <div class="panel-body">
+        <div class="clearfix" style="margin-bottom:10px;">
+            <div class="pull-left">
+                <button type="button" id="btnAddCategory" class="btn btn-primary">Thêm Mới</button>
+                <button type="button" id="btnImportExcelCategory" class="btn btn-success" data-toggle="modal" data-target="#createCustomerModal">Import Excel</button>
+                <a href="@System.Configuration.ConfigurationManager.AppSettings["urlTemplateImportCategory"]">>>Template</a>
+                <form class="form-inline">
+                    <input id="ipIECategory" type="file" name="fileImportExcel" style="display:none" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+                </form>
+                
+            </div>
+                <div class="pull-right">
+                <input class="form-control" id="ipSearch" placeholder="Tìm kiếm" />
+            </div>
+        </div>
+        <table id="tblCategory" class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Tên danh mục</th>
+                    <th>Mã danh mục</th>
+                    @if (!acc.IsStaff)
+                    {
+                        <th style="text-align:center">Thao tác</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in list)
+                {
+                    <tr class="treegrid-@item.Id @(item.ParentId==null?"":("treegrid-parent-"+item.ParentId))">
+                        <td>@item.Name</td>
+                        <td>@item.Code</td>
+                        @if (!acc.IsStaff)
+                        {
+                            <td style="text-align:center">
+                                <i class="fas fa-edit btnEdit" data-id="@item.Id"></i>
+                                <i class="fas fa-trash-alt btnDelete" style="margin-left:20px" data-id="@item.Id"></i>
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@Html.Partial("_ImportCategory", new LIB.CategoryEntity())
