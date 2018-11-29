@@ -533,7 +533,8 @@ i:before {
 }
 
 .top_header_middle img {
-  margin-top: 25px;
+  /*margin-top: 25px;*/
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .top_right_header {
