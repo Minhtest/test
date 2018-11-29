@@ -1,0 +1,202 @@
+﻿@using WebApplication.Authorize
+@using LIB.Warehouses
+@{
+    ViewBag.Title = "Report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var acc = User as CustomPrincipal;
+    var AllWarehouse = ViewBag.AllWarehouse as List<WarehousesEntity>;
+}
+@section styles_plugins{
+    <link href="~/Content/css/bootstrap-table.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap-datepicker3.min.css" />
+    <link href="~/Content/css/select2.min.css" rel="stylesheet" />
+}
+@section scripts_plugins{
+    <script src="~/Content/js/bootstrap-table.min.js"></script>
+    <script src="~/Content/js/bootstrap-table-vi-VN.min.js"></script>
+    <script src="~/Content/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/Content/js/bootstrap-datepicker.vi.min.js"></script>
+    <script src="~/Content/js/select2.full.min.js"></script>
+
+}
+@section scripts{
+    <script src="~/Scripts/controller/Report/DetailGeneral.js"></script>
+    <script>
+        var mychar = new Chart($("#char"), {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'Sản lượng',
+                        data: [],
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Doanh số',
+                        data: [],
+                        borderColor: 'rgba(255,99,132,1)',
+                        backgroundColor: 'rgba(255,99,132,0.5)',
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                tooltips: {
+                    callbacks: {
+                        label: function (tooltipItem, data) {
+                            var label = data.datasets[tooltipItem.datasetIndex].label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            label += formatNumber(tooltipItem.yLabel);
+                            return label;
+                        }
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            callback: function (value) {
+                                return formatNumber(value);
+                            }
+                        }
+                    }]
+                },
+                animation: {
+                    duration: 1,
+                    onComplete: function () {
+                        var chartInstance = this.chart,
+                            ctx = chartInstance.ctx;
+                        ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'bottom';
+                        this.data.datasets.forEach(function (dataset, i) {
+                            var meta = chartInstance.controller.getDatasetMeta(i);
+                            meta.data.forEach(function (bar, index) {
+                                var data = dataset.data[index];
+                                ctx.fillStyle = dataset.borderColor;
+                                ctx.fillText(formatNumber(data), bar._model.x, bar._model.y - 5);
+                            });
+                        });
+                    }
+                },
+                hover: {
+                    animationDuration: 0,
+                },
+                responsiveAnimationDuration: 0
+            }
+        });
+        var type = $("input[name='opType']:checked").val();
+        _AjaxPost("/Report/GetDataCharDetailGeneral", { opType: type, WarehouseId: $("#drdWarehouse").val() }, function (rs) {
+            mychar.data.labels = rs.lstLabels;
+            mychar.data.datasets[0].data = rs.lstQuantitys;
+            mychar.data.datasets[1].data = rs.lstSales;
+            mychar.update();
+        });
+    </script>
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        BÁO CÁO CHI TIẾT TỔNG HỢP
+    </div>
+    <div class="panel-body">
+        <div id="toolbar">
+            <div class="row">
+                <div class="col-sm-6">
+                    @if (acc.IsSupperAdmin)
+                    {
+                        <div class="form-group">
+
+                            <div class="input-group">
+                                <span class="input-group-addon">ShowRoom</span>
+                                <select class="form-control" id="drdWarehouse">
+                                    <option>Tất cả</option>
+                                    @foreach (var item in AllWarehouse)
+                                    {
+                                        <option value="@item.Id">@item.Name</option>
+                                    }
+                                </select>
+                            </div>
+
+                        </div>
+                    }
+                    <div class="col-sm-12">
+                        <label class="control-label">Loại báo cáo:</label>
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default active">
+                                <input type="radio" name="opType" value="0" checked>
+                                Hôm nay
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="opType" value="1">
+                                Tháng này
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="opType" value="2">
+                                Năm nay
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="opType" value="3">
+                                Tùy chỉnh
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-12" id="customDate" hidden>
+                        <div class="input-group">
+                            <div class="input-group-addon">Từ ngày</div>
+                            <input type="text" id="startdate" class="form-control datePicker" datepicker />
+                            <div class="input-group-addon">Đến ngày</div>
+                            <input type="text" id="enddate" class="form-control datePicker" datepicker />
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <label class="control-label" style="margin-bottom:2px;">Lọc khác: </label>
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <label class="btn btn-default">
+                                            <input type="checkbox" id="checkQuest" name="opQuest">
+                                            Khách vãng lai
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="col-sm-12">
+                        <div class="input-group">
+                            <span class="input-group-addon">Khách hàng</span>
+                            <select id="selectCustomer" class="form-control"></select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="input-group">
+                            <span class="input-group-addon">Người tạo</span>
+                            <select id="selectCreated" class="form-control"></select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="input-group">
+                            <input type="text" id="txtsearch" class="form-control" placeholder="Nhập mã đơn hàng | Tên khách hàng | Mã thẻ" />
+                            <div class="input-group-btn">
+                                <button class="btn btn-primary" id="btnSearch" type="button"><i class="fas fa-search"></i></button>
+                                <button class="btn btn-primary" id="btnExportExcel" type="button" style="margin-left:15px">Xuất Excel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table id="tblOrdersReport"></table>
+        <canvas id="char" width="400" height="150"></canvas>
+    </div>
+</div>

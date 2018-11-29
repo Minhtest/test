@@ -1,0 +1,77 @@
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\LIB.dll.config
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\LIB.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\LIB.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Dapper.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\DapperExtensions.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\EPPlus.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Framework.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\LibCore.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\log4net.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\MongoDB.Driver.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Newtonsoft.Json.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\System.Web.Mvc.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\MongoDB.Bson.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Enyim.Caching.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\BCrypt.Net.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\MiniProfiler.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Nest.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Autofac.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\System.Web.WebPages.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Microsoft.SqlServer.Smo.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Autofac.Integration.Mvc.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\System.Web.Razor.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Framework.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Framework.dll.config
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\LibCore.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\LibCore.dll.config
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\Dapper.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\DapperExtensions.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\EPPlus.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\bin\Debug\log4net.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\obj\Debug\LIB.csprojResolveAssemblyReference.cache
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\obj\Debug\LIB.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\obj\Debug\LIB.pdb
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\LIB.dll.config
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\LIB.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\LIB.pdb
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\Framework.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\LibCore.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\System.Web.Mvc.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\MongoDB.Bson.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\Enyim.Caching.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\BCrypt.Net.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\MiniProfiler.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\Nest.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\Autofac.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\System.Web.WebPages.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\Microsoft.SqlServer.Smo.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\System.Web.Razor.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\Framework.pdb
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\Framework.dll.config
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\LibCore.pdb
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\LibCore.dll.config
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\Dapper.xml
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\DapperExtensions.pdb
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\EPPlus.xml
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\log4net.xml
+D:\Web Định\InSysVinaCo\InSysVina\LIB\obj\Debug\LIB.csprojResolveAssemblyReference.cache
+D:\Web Định\InSysVinaCo\InSysVina\LIB\obj\Debug\LIB.dll
+D:\Web Định\InSysVinaCo\InSysVina\LIB\obj\Debug\LIB.pdb
+D:\Web Định\InSysVinaCo\InSysVina\LIB\bin\Debug\System.Web.WebPages.Deployment.dll

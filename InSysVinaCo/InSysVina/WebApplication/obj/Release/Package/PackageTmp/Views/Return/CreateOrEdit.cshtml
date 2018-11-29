@@ -1,0 +1,105 @@
+﻿@using LIB.Warehouses
+@using WebApplication.Authorize
+@model LIB.ReturnEntity
+@{
+    ViewBag.Title = "Trả Hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var AllWarehouse = ViewBag.AllWarehouse as List<WarehousesEntity>;
+    var acc = User as CustomPrincipal;
+}
+@section styles_plugins{
+    <link href="~/Content/css/bootstrap-table.min.css" rel="stylesheet" />
+    <link href="~/Content/css/select2.min.css" rel="stylesheet" />
+    @* use Editable *@
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap-editable.css" />
+    @* end use Editable *@
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap-datepicker3.min.css" />
+}
+@section scripts_plugins{
+    <script src="~/Content/js/bootstrap-table.min.js"></script>
+    <script src="~/Content/js/bootstrap-table-vi-VN.min.js"></script>
+    <script src="~/Content/js/select2.full.min.js"></script>
+    @*<script src="~/Content/js/select2-tab-fix.min.js"></script>*@
+
+    @* use Editable *@
+    <script src="~/Content/js/bootstrap-table-editable.min.js"></script>
+    <script src="~/Content/js/bootstrap-editable.min.js"></script>
+    @* end use Editable *@
+
+    @* Autonumeric *@
+    <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.1.0"></script>
+    @* datepicker *@
+    <script src="~/Content/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/Content/js/bootstrap-datepicker.vi.min.js"></script>
+}
+@section scripts{
+    <script src="~/Scripts/controller/Return_CreateOrEdit.js"></script>
+}
+<div class="panel panel-info">
+    <div class="panel-heading">
+        Thông Tin Trả Hàng
+    </div>
+    <div class="panel-body">
+        @Html.TextBoxFor(m => m.Id, new { style = "display:none" })
+        @Html.TextBoxFor(m => m.OrderId, new { style = "display:none" })
+        @Html.TextBoxFor(m => m.OrderCode, new { style = "display:none" })
+        <div class="row">
+            <div class="col-sm-12">
+                @if (acc.IsSupperAdmin)
+                {
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <span class="input-group-addon">ShowRoom</span>
+                            @if (Model.OrderCode == null)
+                            {
+                                <select class="form-control" id="drdWarehouse">
+                                    @foreach (var item in AllWarehouse)
+                                    {
+                                        <option value="@item.Id" @(item.Id == Model.WarehouseId ? "selected" : "")>@item.Name</option>
+                                    }
+                                </select>
+                            }
+                            else
+                            {
+                                <select class="form-control" id="drdWarehouse" disabled>
+                                    @foreach (var item in AllWarehouse)
+                                    {
+                                        <option value="@item.Id" @(item.Id == Model.WarehouseId ? "selected" : "")>@item.Name</option>
+                                    }
+                                </select>
+                            }
+
+                        </div>
+                    </div>
+                }
+                <div class="col-sm-4">
+                    <div class="input-group">
+                        <label class="input-group-addon" for="">Đơn Hàng</label>
+                        @if (Model.OrderCode == null)
+                        {
+                            <select id="drdOrder" class="form-control"></select>
+                        }
+                        else
+                        {
+                            <select id="drdOrder" class="form-control" disabled></select>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <table id="tblDataProduct"></table>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <div class="clearfix">
+            <div class="pull-right">
+                <a href="/Return"><i class="fas fa-angle-double-left"></i> Quay Lại Danh Sách</a> |
+                <button class="btn btn-success" id="btnOk">Chấp nhận trả hàng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

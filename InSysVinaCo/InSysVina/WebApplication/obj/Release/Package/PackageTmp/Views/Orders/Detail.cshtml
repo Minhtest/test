@@ -1,0 +1,186 @@
+﻿@using LIB
+@{
+    ViewBag.Title = "Thông tin đơn hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section scripts_plugins{
+    <script src="~/Scripts/controller/OrdersDetail.js"></script>
+    <script src="~/Content/js/connectcode-javascript-code128a.js"></script>
+}
+@if (ViewBag.order == null)
+{
+    <div class="alert alert-danger">Đơn hàng không tồn tại!</div>
+}
+else
+{
+    var order = ViewBag.order as OrderEntity;
+    var lstOrderDetail = ViewBag.orderdetail as List<OrderDetailEntity>;
+    var lstOrderPromotion = ViewBag.orderPromotion as List<OrderPromotionEntity>;
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div class="clearfix">
+                <div class="pull-left">
+                    <h5>Thông tin đơn hàng</h5>
+                </div>
+                <div class="pull-right">
+                    <a href="/Orders"><i class="fas fa-angle-double-left"></i> Quay Lại Danh Sách</a> |
+                    <button class="btn btn-primary btn-sm" id="btnPrint">In Đơn Hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <input value="@order.Id" id="OrderId" style="display:none" />
+            <div class="info">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <table class="table table-hover">
+                            <tr>
+                                <td>Mã đơn hàng:</td>
+                                <th>@order.OrderCode</th>
+                            </tr>
+                            <tr>
+                                <td>Thời Gian Tạo:</td>
+                                <th>@order.CreatedDate.Value.ToString("dd/MM/yyyy HH:mm:ss")</th>
+                            </tr>
+                            <tr>
+                                <td>Thời Gian Order:</td>
+                                <th>@(order.OrderDate == null ? "Đang chờ thanh toán" : order.OrderDate.Value.ToString("dd/MM/yyyy HH:mm:ss"))</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <table class="table table-hover">
+                            <tr>
+                                <td>Khách hàng:</td>
+                                <th>@(order.CustomerId == null ? "Khách Vãng Lai" : order.CustomerName)</th>
+                            </tr>
+                            @if (order.CustomerId != null)
+                            {
+                                var cus = ViewBag.customer as CustomerEntity;
+                                <tr>
+                                    <td>Mã khách hàng:</td>
+                                    <th>@cus.CustomerCode</th>
+                                </tr>
+                                <tr>
+                                    <td>Số điện thoại:</td>
+                                    <th>@cus.Phone</th>
+                                </tr>
+                                <tr>
+                                    <td>Địa chỉ: </td>
+                                    <th>@cus.Address</th>
+                                </tr>
+                                <tr>
+                                    <td>Tổng tích điểm:</td>
+                                    <th>@cus.Point</th>
+                                </tr>
+                            }
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+            <div class="title-group"><span>Hàng bán</span></div>
+            <div class="tblProduct">
+                <table class="table table-bordered table-hover table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Tên Sản Phẩm</th>
+                            <th>Barcode</th>
+                            <th>Số Lượng</th>
+                            <th>Giá Bán (VND)</th>
+                            <th>Chiết Khấu (%)</th>
+                            <th>Thành Tiền (VND)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in lstOrderDetail)
+                        {
+                            <tr>
+                                <td>@item.ProductName</td>
+                                <td>@item.Barcode</td>
+                                <td txtNumber style="text-align:right">@item.Quantity</td>
+                                <td txtMoney style="text-align:right">@item.SellPrice</td>
+                                <td style="text-align:right">@item.Discount</td>
+                                <td txtMoney style="text-align:right">@(item.SellPrice * item.Quantity - item.SellPrice * item.Quantity * item.Discount / 100)</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            @if (lstOrderPromotion != null && lstOrderPromotion.Count > 0)
+            {
+                <div class="title-group"><span>Hàng khuyến mại</span></div>
+                <div class="tblProductPromotion">
+                    <table class="table table-bordered table-hover table-responsive">
+                        <thead>
+                            <tr>
+                                <th>Tên Sản Phẩm</th>
+                                <th>Barcode</th>
+                                <th>Số Lượng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in lstOrderPromotion)
+                            {
+                                <tr>
+                                    <td>@item.ProductName</td>
+                                    <td>@item.Barcode</td>
+                                    <td txtNumber style="text-align:right">@item.Quantity</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            <div class="payment">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-md-offset-4">
+                        <table class="table table-hover table-bordered">
+                            <tr>
+                                <td>Thành tiền:</td>
+                                <th txtMoney style="text-align:right">@order.ProductTotal</th>
+                            </tr>
+                            @if (@order.CouponCode != null)
+                            {
+                                <tr>
+                                    <td>Mã giảm giá:</td>
+                                    <th style="text-align:right">@order.CouponCode</th>
+                                </tr>
+                            }
+                            @if (@order.Discount > 0)
+                            {
+                                <tr>
+                                    <td>Giảm giá:</td>
+                                    <th txtMoney style="text-align:right">@order.Discount</th>
+                                </tr>
+                            }
+                            <tr>
+                                <td>Tổng tiền:</td>
+                                <th txtMoney style="text-align:right">@order.GrandTotal</th>
+                            </tr>
+                            @if (@order.PointUsed != null)
+                            {
+                                <tr>
+                                    <td>Giảm bằng điểm:</td>
+                                    <th txtMoney style="text-align:right">@order.PointUsed</th>
+                                </tr>
+                            }
+                            @if (order.Status == 1)
+                            {
+                                <tr>
+                                    <td>Tiền khách đưa: </td>
+                                    <th txtMoney style="text-align:right">@((order.PayCash ?? 0) + (order.PayByCard ?? 0))</th>
+                                </tr>
+                                <tr>
+                                    <td>Tiền trả lại khách:</td>
+                                    <th txtMoney style="text-align:right">@order.RefundMoney</th>
+                                </tr>
+                            }
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="BillContent" style="display:none"></div>
+}

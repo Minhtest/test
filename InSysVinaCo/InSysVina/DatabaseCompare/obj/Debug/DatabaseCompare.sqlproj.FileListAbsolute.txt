@@ -1,0 +1,14 @@
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\DatabaseCompare\bin\Debug\DatabaseCompare.dacpac
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\DatabaseCompare\bin\Debug\DatabaseCompare.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\DatabaseCompare\bin\Debug\DatabaseCompare.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\DatabaseCompare\obj\Debug\Model.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\DatabaseCompare\obj\Debug\refactor.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\DatabaseCompare\obj\Debug\postdeploy.sql
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\DatabaseCompare\obj\Debug\predeploy.sql
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\DatabaseCompare\obj\Debug\DatabaseCompare.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\DatabaseCompare\obj\Debug\DatabaseCompare.pdb
+D:\Web Định\InSysVinaCo\InSysVina\DatabaseCompare\bin\Debug\DatabaseCompare.dacpac
+D:\Web Định\InSysVinaCo\InSysVina\DatabaseCompare\bin\Debug\DatabaseCompare.dll
+D:\Web Định\InSysVinaCo\InSysVina\DatabaseCompare\bin\Debug\DatabaseCompare.pdb
+D:\Web Định\InSysVinaCo\InSysVina\DatabaseCompare\obj\Debug\DatabaseCompare.dll
+D:\Web Định\InSysVinaCo\InSysVina\DatabaseCompare\obj\Debug\DatabaseCompare.pdb

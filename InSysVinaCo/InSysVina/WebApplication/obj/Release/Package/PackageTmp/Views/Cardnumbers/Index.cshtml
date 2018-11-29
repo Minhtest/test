@@ -1,0 +1,49 @@
+﻿@using LIB.Warehouses
+@using WebApplication.Authorize
+@{
+    ViewBag.Title = "Danh sách thẻ thành viên";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var acc = User as CustomPrincipal;
+    //var AllWarehouse = ViewBag.AllWarehouse as List<WarehousesEntity>;
+}
+@section scripts{
+    <script src="~/Scripts/controller/CardNumber.js"></script>
+}
+<div class="panel panel-info">
+    <div class="panel-heading">
+        Danh sách thẻ thành viên
+    </div>
+    <div class="panel-body">
+        <div id="toolbar">
+            <form id="filter" class="form-inline" enctype="multipart/form-data">
+                <div class="form-group">
+
+                    <div class="input-group" style="margin-bottom:0">
+                        @*@if (acc.IsSupperAdmin)
+        {
+            <span class="input-group-addon">ShowRoom</span>
+            <select class="form-control" id="drdWarehouse">
+                <option>Tất cả</option>
+                @foreach (var item in AllWarehouse)
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            </select>
+        }*@
+                        @* <span class="input-group-btn">*@
+                        <button type="button" id="btnAddCardNumber" class="btn btn-primary" data-toggle="modal" data-target="#createCardNumberModal">Thêm Mới</button>
+                        <button class="btn btn-success" type="button" id="btnImportExcelCardNumber">Import Excel</button>
+                        <input id="ipIECardNumber" type="file" name="fileImportExcel" style="display:none" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+                        <button class="btn btn-primary" id="btnExportExcel" type="button">Export Excel</button>
+                        <a href="@System.Configuration.ConfigurationManager.AppSettings["urlTemplateImportCardNumber"]">>>Template</a>
+
+                        @*</span>*@
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <table id="tblCardNumber" class="table" data-toolbar="#toolbar"></table>
+    </div>
+</div>
+@Html.Partial("_ImportCardNumber", new LIB.CardNumbers.CardNumbersEntity())

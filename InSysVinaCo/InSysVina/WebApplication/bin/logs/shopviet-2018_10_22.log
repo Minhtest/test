@@ -1,0 +1,1349 @@
+==> [INFO] | 2018-10-22 09:11:59 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-22 09:11:59 | Mã token:bearer UHIoMBjRiQlVt2Gf8JytyB1tCCUEwGkzLEJuZcuZR9g1PyXLqb1yPwyQstyiEoZaEOsmOdO7348XM9uBzXgT7HafZhJxAzjHWxUQ5oak2cIAbg_AEayJzLMiabVOi6hfQmLP_-PKPcZj5wQ95_Km_nT49YaZjIFnCk5AjS3tajjq3kfXOKNLDRQ0YNVOYgJ6ZS30ZJQYxUcEx6iq7BtZaxCUCQTVPJesUP24LFV4R6FNose7EmV4m4NvUkI9zEvxQtJaPIuWEXmtLLoZVUiic_YqfIHwf_pItNoN-6ZU2-e8QI5W2_qypQzXIYgqifX3BgBnK2xv8Zw_11FK0hIf_A 
+ 
+==> [INFO] | 2018-10-22 09:11:59 | Not have Orders to post:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 09:11:59 | End while! 
+ 
+==> [INFO] | 2018-10-22 09:12:19 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-22 09:36:14 | Mã token:bearer uK5A2kxNgMIXMx-AzK54ZIvBGt_wQOliT6tMp-j22Fw4r5zzbPmNdNWdDWNorD-zcouyr81Bx_z7GmK6mW7E6YtSgTPT6EKRmaDNtXq5TywhuFhAbve2wMx-S_flPP0lzTDLhGVemg3wb60epulkU1SmTkdb3zy2OgDITq6lN68Ch2b0XX0K5nImAZAUY3aKvY-0e9aq2lPORw0WkrurKjveWK3p8LJ5Zs_e32N5I59uP2elIMsxlxzCKIBFaJlNug-TNH3Uwy9QuUR9TXBh0WdLpCwvUd6V2Cf1jpTF2Dc1Ihu2yTM0NE67oPicshBJ0QH62B_IfEv3GrT-rQoSug 
+ 
+==> [INFO] | 2018-10-22 09:36:14 | Not have Orders to post:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 09:36:14 | End while! 
+ 
+==> [ERROR] | 2018-10-22 09:50:42 | System.Data.SqlClient.SqlException (0x80131904): Windowed functions and NEXT VALUE FOR functions do not support integer indices as ORDER BY clause expressions.
+Windowed functions and NEXT VALUE FOR functions do not support integer indices as ORDER BY clause expressions.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 322
+   at LIB.CardNumbers.IplCardNumbers.GetAllData(bootstrapTableParam obj, Int32& totalRecord) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\CardNumbers\IplCardNumbers.cs:line 97
+ClientConnectionId:7c7d8099-09a0-410a-9360-5617ce0122a4
+Error Number:5308,State:1,Class:16 
+ 
+==> [ERROR] | 2018-10-22 09:50:46 | System.Data.SqlClient.SqlException (0x80131904): Windowed functions and NEXT VALUE FOR functions do not support integer indices as ORDER BY clause expressions.
+Windowed functions and NEXT VALUE FOR functions do not support integer indices as ORDER BY clause expressions.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 322
+   at LIB.CardNumbers.IplCardNumbers.GetAllData(bootstrapTableParam obj, Int32& totalRecord) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\CardNumbers\IplCardNumbers.cs:line 97
+ClientConnectionId:7c7d8099-09a0-410a-9360-5617ce0122a4
+Error Number:5308,State:1,Class:16 
+ 
+==> [ERROR] | 2018-10-22 09:50:48 | System.Data.SqlClient.SqlException (0x80131904): Windowed functions and NEXT VALUE FOR functions do not support integer indices as ORDER BY clause expressions.
+Windowed functions and NEXT VALUE FOR functions do not support integer indices as ORDER BY clause expressions.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 322
+   at LIB.CardNumbers.IplCardNumbers.GetAllData(bootstrapTableParam obj, Int32& totalRecord) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\CardNumbers\IplCardNumbers.cs:line 97
+ClientConnectionId:7c7d8099-09a0-410a-9360-5617ce0122a4
+Error Number:5308,State:1,Class:16 
+ 
+==> [ERROR] | 2018-10-22 09:50:59 | System.Data.SqlClient.SqlException (0x80131904): Windowed functions and NEXT VALUE FOR functions do not support integer indices as ORDER BY clause expressions.
+Windowed functions and NEXT VALUE FOR functions do not support integer indices as ORDER BY clause expressions.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 322
+   at LIB.CardNumbers.IplCardNumbers.GetAllData(bootstrapTableParam obj, Int32& totalRecord) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\CardNumbers\IplCardNumbers.cs:line 97
+ClientConnectionId:7c7d8099-09a0-410a-9360-5617ce0122a4
+Error Number:5308,State:1,Class:16 
+ 
+==> [INFO] | 2018-10-22 10:34:33 | ===============Start Sync Orders! ==================== 
+ 
+==> [ERROR] | 2018-10-22 10:34:35 | System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:5455
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at LIB.APIExtension.PostKeyValue(Dictionary`2 dictionaryBody, String url) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\APIExtension.cs:line 19
+   at LIB.API.IplAPI.GetBearerTokenToWarehouse(String apiToken) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 45
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:5455
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+ 
+ 
+==> [INFO] | 2018-10-22 10:34:35 | Mã token: 
+ 
+==> [ERROR] | 2018-10-22 10:34:35 | Get token fail! 
+ 
+==> [INFO] | 2018-10-22 10:34:42 | ===============Start Sync Orders! ==================== 
+ 
+==> [ERROR] | 2018-10-22 10:36:02 | System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:5455
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at LIB.APIExtension.PostKeyValue(Dictionary`2 dictionaryBody, String url) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\APIExtension.cs:line 19
+   at LIB.API.IplAPI.GetBearerTokenToWarehouse(String apiToken) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 45
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:5455
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+ 
+ 
+==> [INFO] | 2018-10-22 10:36:02 | Mã token: 
+ 
+==> [ERROR] | 2018-10-22 10:36:02 | Get token fail! 
+ 
+==> [INFO] | 2018-10-22 11:53:41 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-22 11:53:41 | API:http://192.168.0.92:9000//token 
+ 
+==> [INFO] | 2018-10-22 11:53:41 | Mã token:bearer ULtCiDUaxAwhcmaYrt2Nfg5vB8qS0GESfPnyXzKPaVAqB66cKVKv0Hml-QL4GCoTfUzdgwBFpivWEjxZFpMfoFBIp_Jj-6nfIWIUagVLsB8t7dJeqgHvFsEZ6ApOnL___65P98LvlrEqJ0AikRSv1f6YhyFOzkkgq8lEypt3o95K_IpL_-bORRAjdqyy9NYEKoZvC8XggXGO2fd6eRvfDuR5bQ795AeepYxszf6wwQg0hZMxaXn4KyPXnMpIgZj1XGGzqOXl8gAACekGfp-bxY7tHBQB9l1fZ3Xfu27x4mCKvIPk_aHs2Max8LTrZwHEnT8HWBKcqsrfAdqqrPX-5Q 
+ 
+==> [INFO] | 2018-10-22 11:53:41 | Not have Orders to post:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 11:53:41 | End while! 
+ 
+==> [INFO] | 2018-10-22 13:38:36 | Mã token:bearer ictB1t4LpFMF4svmgMu6RFNZZhqkRxdc0uwj41cYxgTaa-BFcGnu_aDxXNN_Zjx732pAZ2BqZLUWNi4myEWOe87yGoKynTRUBKPX4NBeVfPw5x_7mqKMALDgB_-tkN-q-p9q_OBHDVU88cfUqV9mcNGVNz_6Q79eCm0Kdu_4Q6p2RHSBmZRyZw253thKiUSEOzQbWNGyy5th31DDCHiukbwbqtY0oBXmBahzb2xQVczY--39GQszmoqBvXO_grmlnDXw67wRdNVDJnS_6fquTrP89OM1A5e4AGi9BbHdxoaseEbXRjHwrgIHPU5FBySc1PrmVeQPVR48rYOF9tHqMw 
+ 
+==> [INFO] | 2018-10-22 13:38:36 | Data after serilze WarehousesId:{"WarehouseIds":"82","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-22 13:38:37 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-22 13:38:38 | Data receive from post api:{"status":true,"data":[{"barcode":"20821233251216","productCode":"01CP2023D22T","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M1","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251221","productCode":"068M873D1Z2I","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S1","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251211","productCode":"0N3J2NH28V8I","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M1","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251213","productCode":"17188D0G41M4","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng1","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251223","productCode":"1G050Q17JTC2","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue1","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251224","productCode":"209FHGK442S9","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH11","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251202","productCode":"2605L913VT0M","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml1","computeUnit":"Chai","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251215","productCode":"295NNT2VCI42","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-1221","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251225","productCode":"2C334H11AHN8","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH21","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251208","productCode":"2HN9125688T4","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g1","computeUnit":"Chai","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251214","productCode":"31536462OM56","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-1211","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251207","productCode":"36UAB806S2RJ","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g1","computeUnit":"Chai","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251209","productCode":"3I222P928HC0","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC18431","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251226","productCode":"3K5T084H1R28","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH31","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251222","productCode":"44H7JM3BGXT9","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M1","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251204","productCode":"576729T8XO80","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g1","computeUnit":"Chai","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251206","productCode":"6B225U71F10L","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g1","computeUnit":"Chai","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251217","productCode":"6KB58032E267","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-1301","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251203","productCode":"6O2V22A5639Q","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g1","computeUnit":"Chai","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251220","productCode":"7T3A73BJIX1E","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-1331","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251227","productCode":"8T02I31E516R","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé1","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251200","productCode":"D7O83L2P1H32","productCategory":"Hàng n?i b?","quantity":99,"warehouseId":82,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n1 ","computeUnit":"Chai","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251219","productCode":"FM7D5522T6YN","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng1","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251201","productCode":"LF5A8S14K7M8","productCategory":"Hàng n?i b?","quantity":99,"warehouseId":82,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml1","computeUnit":"Chai","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251205","productCode":"S39YWZ61T2RB","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)1","computeUnit":"Chai","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251218","productCode":"S959G662EPJT","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-1321","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251210","productCode":"WG43H0AQ0O1I","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S1","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null},{"barcode":"20821233251212","productCode":"Y06J52DIV1GK","productCategory":"Hàng n?i b?","quantity":100,"warehouseId":82,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L1","computeUnit":"Chi?c","sellPrice":200000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-22 13:38:38 | Get Product success 
+ 
+==> [INFO] | 2018-10-22 13:38:38 | End while! 
+ 
+==> [INFO] | 2018-10-22 13:38:38 | ProductSyncNew Success 
+ 
+==> [INFO] | 2018-10-22 15:24:58 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-22 15:25:33 | API:http://localhost:5455/token 
+ 
+==> [ERROR] | 2018-10-22 15:30:38 | Warehouse not found 
+ 
+==> [INFO] | 2018-10-22 15:31:23 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-22 15:31:36 | API:http://localhost:5455/token 
+ 
+==> [ERROR] | 2018-10-22 15:32:00 | System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:5455
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at LIB.APIExtension.PostKeyValue(Dictionary`2 dictionaryBody, String url) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\APIExtension.cs:line 19
+   at LIB.API.IplAPI.GetBearerTokenToWarehouse(String apiToken) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 45
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:5455
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+ 
+ 
+==> [INFO] | 2018-10-22 15:32:30 | Mã token:123 
+ 
+==> [ERROR] | 2018-10-22 15:33:06 | System.NullReferenceException: Object reference not set to an instance of an object.
+   at LIB.API.IplAPI.<API_Warehouses_SyncDataProduct>d__2.MoveNext() 
+ 
+==> [INFO] | 2018-10-22 15:33:16 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-22 15:33:19 | API:http://localhost:5455/token 
+ 
+==> [INFO] | 2018-10-22 15:33:23 | Mã token:123 
+ 
+==> [INFO] | 2018-10-22 15:35:26 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KS2000000012</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>119000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903301056065</Barcode><ProductCode>4TL95B93219S</ProductCode><Quantity>1</Quantity><Price>119000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>119000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>KS2000000011</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>600000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4028898012226</Barcode><Quantity>30</Quantity><Price>20000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>600000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-22 15:35:49 | Data after convert xml -> json:{"OrderPost":{"OrderShops":{"OrderShop":[{"OrderResource":"KS2000000012","WarehouseCode":"KHOSHOP2","TotalPrice":"119000.00","TypeOrder":"0","OrderItems":{"OrderItem":{"Barcode":"4903301056065","ProductCode":"4TL95B93219S","Quantity":"1","Price":"119000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"119000.000000","Type":"Sell"}}},{"OrderResource":"KS2000000011","WarehouseCode":"KHOSHOP2","TotalPrice":"600000.00","TypeOrder":"0","OrderItems":{"OrderItem":{"Barcode":"4028898012226","Quantity":"30","Price":"20000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"600000.000000","Type":"Sell"}}}]}}} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KS2000000010</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>45000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903367301475</Barcode><ProductCode>15PW70BQ132D</ProductCode><Quantity>1</Quantity><Price>45000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>45000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>KS2000000007</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>414000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903367301475</Barcode><ProductCode>15PW70BQ132D</ProductCode><Quantity>1</Quantity><Price>45000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>45000.000000</TotalPrice><Type>Sell</Type></OrderItem><OrderItem><Barcode>4903301056065</Barcode><ProductCode>4TL95B93219S</ProductCode><Quantity>1</Quantity><Price>119000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>119000.000000</TotalPrice><Type>Sell</Type></OrderItem><OrderItem><Barcode>4903301142065</Barcode><ProductCode>917R401C47W5</ProductCode><Quantity>2</Quantity><Price>125000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>250000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":{"OrderShops":{"OrderShop":[{"OrderResource":"KS2000000010","WarehouseCode":"KHOSHOP2","TotalPrice":"45000.00","TypeOrder":"0","OrderItems":{"OrderItem":{"Barcode":"4903367301475","ProductCode":"15PW70BQ132D","Quantity":"1","Price":"45000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"45000.000000","Type":"Sell"}}},{"OrderResource":"KS2000000007","WarehouseCode":"KHOSHOP2","TotalPrice":"414000.00","TypeOrder":"0","OrderItems":{"OrderItem":[{"Barcode":"4903367301475","ProductCode":"15PW70BQ132D","Quantity":"1","Price":"45000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"45000.000000","Type":"Sell"},{"Barcode":"4903301056065","ProductCode":"4TL95B93219S","Quantity":"1","Price":"119000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"119000.000000","Type":"Sell"},{"Barcode":"4903301142065","ProductCode":"917R401C47W5","Quantity":"2","Price":"125000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"250000.000000","Type":"Sell"}]}}]}}} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:42 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:42:43 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:42:43 | End while! 
+ 
+==> [INFO] | 2018-10-22 15:43:56 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-22 15:43:59 | API:http://localhost:5455/token 
+ 
+==> [INFO] | 2018-10-22 15:44:09 | Mã token:123 
+ 
+==> [INFO] | 2018-10-22 15:44:23 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KS2000000012</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>119000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903301056065</Barcode><ProductCode>4TL95B93219S</ProductCode><Quantity>1</Quantity><Price>119000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>119000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>KS2000000011</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>600000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4028898012226</Barcode><Quantity>30</Quantity><Price>20000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>600000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-22 15:44:23 | Data after convert xml -> json:{"OrderPost":{"OrderShops":{"OrderShop":[{"OrderResource":"KS2000000012","WarehouseCode":"KHOSHOP2","TotalPrice":"119000.00","TypeOrder":"0","OrderItems":{"OrderItem":{"Barcode":"4903301056065","ProductCode":"4TL95B93219S","Quantity":"1","Price":"119000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"119000.000000","Type":"Sell"}}},{"OrderResource":"KS2000000011","WarehouseCode":"KHOSHOP2","TotalPrice":"600000.00","TypeOrder":"0","OrderItems":{"OrderItem":{"Barcode":"4028898012226","Quantity":"30","Price":"20000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"600000.000000","Type":"Sell"}}}]}}} 
+ 
+==> [ERROR] | 2018-10-22 15:44:27 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KS2000000010</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>45000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903367301475</Barcode><ProductCode>15PW70BQ132D</ProductCode><Quantity>1</Quantity><Price>45000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>45000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>KS2000000007</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>414000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903367301475</Barcode><ProductCode>15PW70BQ132D</ProductCode><Quantity>1</Quantity><Price>45000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>45000.000000</TotalPrice><Type>Sell</Type></OrderItem><OrderItem><Barcode>4903301056065</Barcode><ProductCode>4TL95B93219S</ProductCode><Quantity>1</Quantity><Price>119000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>119000.000000</TotalPrice><Type>Sell</Type></OrderItem><OrderItem><Barcode>4903301142065</Barcode><ProductCode>917R401C47W5</ProductCode><Quantity>2</Quantity><Price>125000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>250000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Data after convert xml -> json:{"OrderPost":{"OrderShops":{"OrderShop":[{"OrderResource":"KS2000000010","WarehouseCode":"KHOSHOP2","TotalPrice":"45000.00","TypeOrder":"0","OrderItems":{"OrderItem":{"Barcode":"4903367301475","ProductCode":"15PW70BQ132D","Quantity":"1","Price":"45000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"45000.000000","Type":"Sell"}}},{"OrderResource":"KS2000000007","WarehouseCode":"KHOSHOP2","TotalPrice":"414000.00","TypeOrder":"0","OrderItems":{"OrderItem":[{"Barcode":"4903367301475","ProductCode":"15PW70BQ132D","Quantity":"1","Price":"45000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"45000.000000","Type":"Sell"},{"Barcode":"4903301056065","ProductCode":"4TL95B93219S","Quantity":"1","Price":"119000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"119000.000000","Type":"Sell"},{"Barcode":"4903301142065","ProductCode":"917R401C47W5","Quantity":"2","Price":"125000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"250000.000000","Type":"Sell"}]}}]}}} 
+ 
+==> [ERROR] | 2018-10-22 15:44:27 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:27 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:27 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:27 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:27 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:27 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:27 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:27 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:27 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:27 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:27 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:27 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:27 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [ERROR] | 2018-10-22 15:44:28 | Get order fail 
+ 
+==> [INFO] | 2018-10-22 15:44:28 | End while! 
+ 
+==> [INFO] | 2018-10-22 15:44:36 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-22 15:44:40 | API:http://localhost:5455/token 
+ 
+==> [ERROR] | 2018-10-22 15:44:49 | StatusCode: 500, ReasonPhrase: 'Internal Server Error', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcTUlOSE5OXERlc2t0b3BcQ09ERVxXQVJFSE9VU0VcV2FyZWhvdXNlQVBJXHRva2Vu?=
+  Cache-Control: private
+  Date: Mon, 22 Oct 2018 08:44:49 GMT
+  Server: Microsoft-IIS/10.0
+  X-AspNet-Version: 4.0.30319
+  X-Powered-By: ASP.NET
+  Content-Length: 5251
+  Content-Type: text/html; charset=utf-8
+} 
+ 
+==> [INFO] | 2018-10-22 15:54:21 | Mã token: 
+ 
+==> [ERROR] | 2018-10-22 15:54:21 | Get token fail! 
+ 
+==> [INFO] | 2018-10-22 15:54:37 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-22 15:54:52 | API:http://localhost:5455/token 
+ 
+==> [INFO] | 2018-10-22 15:55:05 | Mã token:bearer HJvX3PJ1dPy_3XbSW1vkAUS_3www4tN18BtHXmq1qwuZvPDXfvxJa4ohH7VNCcmN9cZHn21zFg8_1zawmXemFKF8sjOVeqVhHQCNHWuKK1z0X0MfQt8YSPts31fTiJqgkFLo0KRudSNxNTH6NIsEV3ub3tmjuGY1KYTfE38wo6lJ6W684n_NaQ0_-Uf90xeeFd9gYCTWvfETrRlOwzXjMluXDlwYkoaU48anHI6Bf_NMKzfT6B1k9ze2P3icdCsyBF3LUYGJt7kkyIp-Hh9dSSLkSR9FWreeDydOlIKcBgsZ0SH_KTogeKRPZYGuxOhm41lf2kLc_0Hl4QTybqiy5w 
+ 
+==> [INFO] | 2018-10-22 15:55:18 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KS2000000012</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>119000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903301056065</Barcode><ProductCode>4TL95B93219S</ProductCode><Quantity>1</Quantity><Price>119000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>119000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>KS2000000011</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>600000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4028898012226</Barcode><Quantity>30</Quantity><Price>20000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>600000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-22 15:55:24 | Data after convert xml -> json:{"OrderPost":{"OrderShops":{"OrderShop":[{"OrderResource":"KS2000000012","WarehouseCode":"KHOSHOP2","TotalPrice":"119000.00","TypeOrder":"0","OrderItems":{"OrderItem":{"Barcode":"4903301056065","ProductCode":"4TL95B93219S","Quantity":"1","Price":"119000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"119000.000000","Type":"Sell"}}},{"OrderResource":"KS2000000011","WarehouseCode":"KHOSHOP2","TotalPrice":"600000.00","TypeOrder":"0","OrderItems":{"OrderItem":{"Barcode":"4028898012226","Quantity":"30","Price":"20000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"600000.000000","Type":"Sell"}}}]}}} 
+ 
+==> [INFO] | 2018-10-22 15:56:19 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:19 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KS2000000010</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>45000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903367301475</Barcode><ProductCode>15PW70BQ132D</ProductCode><Quantity>1</Quantity><Price>45000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>45000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>KS2000000007</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>414000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903367301475</Barcode><ProductCode>15PW70BQ132D</ProductCode><Quantity>1</Quantity><Price>45000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>45000.000000</TotalPrice><Type>Sell</Type></OrderItem><OrderItem><Barcode>4903301056065</Barcode><ProductCode>4TL95B93219S</ProductCode><Quantity>1</Quantity><Price>119000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>119000.000000</TotalPrice><Type>Sell</Type></OrderItem><OrderItem><Barcode>4903301142065</Barcode><ProductCode>917R401C47W5</ProductCode><Quantity>2</Quantity><Price>125000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>250000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-22 15:56:19 | Data after convert xml -> json:{"OrderPost":{"OrderShops":{"OrderShop":[{"OrderResource":"KS2000000010","WarehouseCode":"KHOSHOP2","TotalPrice":"45000.00","TypeOrder":"0","OrderItems":{"OrderItem":{"Barcode":"4903367301475","ProductCode":"15PW70BQ132D","Quantity":"1","Price":"45000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"45000.000000","Type":"Sell"}}},{"OrderResource":"KS2000000007","WarehouseCode":"KHOSHOP2","TotalPrice":"414000.00","TypeOrder":"0","OrderItems":{"OrderItem":[{"Barcode":"4903367301475","ProductCode":"15PW70BQ132D","Quantity":"1","Price":"45000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"45000.000000","Type":"Sell"},{"Barcode":"4903301056065","ProductCode":"4TL95B93219S","Quantity":"1","Price":"119000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"119000.000000","Type":"Sell"},{"Barcode":"4903301142065","ProductCode":"917R401C47W5","Quantity":"2","Price":"125000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"250000.000000","Type":"Sell"}]}}]}}} 
+ 
+==> [INFO] | 2018-10-22 15:56:39 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:39 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:39 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:41 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:41 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:41 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:42 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:42 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:42 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:43 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:43 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:43 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:43 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:44 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:44 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:44 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:44 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:44 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:44 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:45 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:45 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:45 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:45 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:45 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:45 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:46 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:46 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:46 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:46 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:46 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:46 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:47 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:47 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:47 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:47 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:47 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:47 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:47 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:48 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:48 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:48 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:48 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:48 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:48 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:48 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:48 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:49 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:49 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:49 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:50 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:50 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:50 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:50 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:50 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:50 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:51 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:51 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:51 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:51 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:51 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:51 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:51 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:51 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:51 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:52 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:52 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:52 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:52 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:52 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:52 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:53 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:53 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:53 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:53 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:53 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:53 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:54 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:54 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:54 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:54 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:55 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:55 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:55 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:55 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:55 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:56 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:56 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:56 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:56 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:56 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:56 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:57 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:57 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:57 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:57 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:57 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:57 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:58 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:58 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:58 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:58 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:58 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:58 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:56:59 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:56:59 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:56:59 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:57:00 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:57:00 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:57:00 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:57:00 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:57:00 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:57:00 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:57:01 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:57:01 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:57:01 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:57:01 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:57:01 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:57:01 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:57:02 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:57:02 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:57:02 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:57:02 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:57:02 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:57:02 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:57:03 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:57:03 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:57:03 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:57:04 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:57:04 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:57:04 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:57:04 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:57:04 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:57:04 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:57:04 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:57:04 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:57:04 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:57:04 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:57:05 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:57:05 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:57:05 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:57:05 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 15:57:05 | Data after convert xml -> json:{"OrderPost":null} 
+ 
+==> [INFO] | 2018-10-22 15:57:05 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 15:57:05 | End while! 
+ 
+==> [INFO] | 2018-10-22 16:10:03 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-22 16:10:57 | API:http://localhost:5455/token 
+ 
+==> [INFO] | 2018-10-22 16:11:08 | Mã token:bearer t_cQDBvB5iTfDAM-qPC8iLSGxstAM2RzalVNAJEQ06zItT7W53Oy8NfrFzE_Q7h0EXc62A82IfvG2xnaPN2X8wjL4hXWv6dygxG9Jb-sfGRK2nlSAe-yM14QV4hSkSEIFgSE1HaZ0_IYephqxouj_86lPNeoae95CrCeroP_Zsoc8gHGajCtus_ieFTj4OiYppwvzCkittew8dEYMFVIdbe_rJaca6TLKYVopRSLLVfgpfHurfasH6aAiNlYPn-q3RvzFHyQvZ34JLddA7fPvERJ24av1vqjJ9w8dHmtBhRmzjIH6Xu-RWf20ZY2qTtLb1pvvvQJcRhzlA0r2zaQ6g 
+ 
+==> [INFO] | 2018-10-22 16:11:22 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KS2000000012</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>119000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903301056065</Barcode><ProductCode>4TL95B93219S</ProductCode><Quantity>1</Quantity><Price>119000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>119000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>KS2000000011</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>600000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4028898012226</Barcode><Quantity>30</Quantity><Price>20000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>600000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-22 16:11:32 | Data after convert xml -> json:{"OrderPost":{"OrderShops":{"OrderShop":[{"OrderResource":"KS2000000012","WarehouseCode":"KHOSHOP2","TotalPrice":"119000.00","TypeOrder":"0","OrderItems":{"OrderItem":{"Barcode":"4903301056065","ProductCode":"4TL95B93219S","Quantity":"1","Price":"119000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"119000.000000","Type":"Sell"}}},{"OrderResource":"KS2000000011","WarehouseCode":"KHOSHOP2","TotalPrice":"600000.00","TypeOrder":"0","OrderItems":{"OrderItem":{"Barcode":"4028898012226","Quantity":"30","Price":"20000.00","Discount":"0.000000","PercentDiscount":"0.00","TotalPrice":"600000.000000","Type":"Sell"}}}]}}} 
+ 
+==> [INFO] | 2018-10-22 16:22:02 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-22 16:22:05 | API:http://localhost:5455/token 
+ 
+==> [INFO] | 2018-10-22 16:23:00 | Mã token:bearer 80eawUjUgCa1bfdlAnkxMnIEgQDZXlJVTs3J7UL1iaPXHJzdHBae_6X0AXcRJ0xjjwjWKZk1dD4HE1mbqoHgEv9_i5l49icod9Woj-pkjDFg2pl0Cz5kDWwW9jTa9mFlLmOLMMxr06prCR57ooFxxMlQl0I9wglSwlnmexSF6ULjj0F8Sl0a5Ov3xQF-V8MEKosfGivYczXNAwycOC7UZ53N07S3xRiSjN84va_tZxkWtWKwp57_kOxlVz5hv-k2kL-kclja5OkVCzX619S5XQ-HCeTc6eNtwoOl9gkFqXX0Kw4ABmAiDi1W4gw0a5-kI_wdXcsbpbdVn5dLEx8dRg 
+ 
+==> [INFO] | 2018-10-22 16:23:21 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KS2000000012</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>119000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903301056065</Barcode><ProductCode>4TL95B93219S</ProductCode><Quantity>1</Quantity><Price>119000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>119000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>KS2000000011</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>600000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4028898012226</Barcode><Quantity>30</Quantity><Price>20000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>600000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-22 16:23:45 | Data after convert xml -> json:{"OrderShops":[{"OrderResource":"KS2000000012","Description":null,"WarehouseCode":"KHOSHOP2","Note":null,"TotalPrice":119000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4903301056065","ProductCode":"4TL95B93219S","Quantity":1,"Price":119000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":119000.0}]},{"OrderResource":"KS2000000011","Description":null,"WarehouseCode":"KHOSHOP2","Note":null,"TotalPrice":600000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4028898012226","ProductCode":null,"Quantity":30,"Price":20000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":600000.0}]}]} 
+ 
+==> [ERROR] | 2018-10-22 16:24:49 | System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.Connection.ReadCallback(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at LIB.API.IplAPI.<API_Warehouses_SyncDataProduct>d__2.MoveNext()
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.Connection.ReadCallback(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+ 
+ 
+==> [INFO] | 2018-10-22 17:00:09 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-22 17:00:14 | API:http://localhost:5455/token 
+ 
+==> [ERROR] | 2018-10-22 17:00:20 | System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:5455
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at LIB.APIExtension.PostKeyValue(Dictionary`2 dictionaryBody, String url) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\APIExtension.cs:line 19
+   at LIB.API.IplAPI.GetBearerTokenToWarehouse(String apiToken) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 45
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:5455
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+ 
+ 
+==> [INFO] | 2018-10-22 17:00:21 | Mã token: 
+ 
+==> [ERROR] | 2018-10-22 17:01:56 | Get token fail! 
+ 
+==> [INFO] | 2018-10-22 17:02:11 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-22 17:02:25 | API:http://localhost:5455/token 
+ 
+==> [INFO] | 2018-10-22 17:02:51 | Mã token:bearer crL78Xpz1l5n41wn7Ieru47JCIvY4zwiyXvtMFa3EideMszaABuVYibAKPEDAfiYrBTNqByjk24JbRhRIxjS9JTqus3kZ3bE6AJacD1sNNjg6ZECjOxuz_KIrD1276Dk8frtpTfH7upQwA0tq-HLNkcEIA1lI-pMTBbTY46pLbO_g5R00fs4EU2Ygm0qU4QsEA7AfTMPgYpezL3p2dnYztVOSd2PH6tazMFMd6yJ7j87SWuGQHZhAA0YiiIsBfJABSIuuWpfQsOkwh3g_HTxmPBv1VjLWDbdkCDq095nhcS9WirawufWqak3_WvN96_UN-E8uau33dqtUgFNCEQZcg 
+ 
+==> [INFO] | 2018-10-22 17:03:51 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KS2000000012</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>119000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903301056065</Barcode><ProductCode>4TL95B93219S</ProductCode><Quantity>1</Quantity><Price>119000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>119000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>KS2000000011</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>600000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4028898012226</Barcode><Quantity>30</Quantity><Price>20000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>600000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-22 17:03:57 | Data after convert xml -> json:{"OrderShops":[{"OrderResource":"KS2000000012","Description":null,"WarehouseCode":"KHOSHOP2","Note":null,"TotalPrice":119000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4903301056065","ProductCode":"4TL95B93219S","Quantity":1,"Price":119000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":119000.0}]},{"OrderResource":"KS2000000011","Description":null,"WarehouseCode":"KHOSHOP2","Note":null,"TotalPrice":600000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4028898012226","ProductCode":null,"Quantity":30,"Price":20000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":600000.0}]}]} 
+ 
+==> [INFO] | 2018-10-22 17:21:42 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KS2000000012</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>119000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903301056065</Barcode><ProductCode>4TL95B93219S</ProductCode><Quantity>1</Quantity><Price>119000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>119000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>KS2000000011</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>600000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4028898012226</Barcode><Quantity>30</Quantity><Price>20000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>600000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-22 17:21:42 | Data after convert xml -> json:{"OrderShops":[{"OrderResource":"KS2000000012","Description":null,"WarehouseCode":"KHOSHOP2","Note":null,"TotalPrice":119000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4903301056065","ProductCode":"4TL95B93219S","Quantity":1,"Price":119000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":119000.0}]},{"OrderResource":"KS2000000011","Description":null,"WarehouseCode":"KHOSHOP2","Note":null,"TotalPrice":600000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4028898012226","ProductCode":null,"Quantity":30,"Price":20000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":600000.0}]}]} 
+ 
+==> [INFO] | 2018-10-22 17:21:59 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-22 17:21:59 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KS2000000010</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>45000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903367301475</Barcode><ProductCode>15PW70BQ132D</ProductCode><Quantity>1</Quantity><Price>45000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>45000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>KS2000000007</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>414000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903367301475</Barcode><ProductCode>15PW70BQ132D</ProductCode><Quantity>1</Quantity><Price>45000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>45000.000000</TotalPrice><Type>Sell</Type></OrderItem><OrderItem><Barcode>4903301056065</Barcode><ProductCode>4TL95B93219S</ProductCode><Quantity>1</Quantity><Price>119000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>119000.000000</TotalPrice><Type>Sell</Type></OrderItem><OrderItem><Barcode>4903301142065</Barcode><ProductCode>917R401C47W5</ProductCode><Quantity>2</Quantity><Price>125000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>250000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-22 17:21:59 | Data after convert xml -> json:{"OrderShops":[{"OrderResource":"KS2000000010","Description":null,"WarehouseCode":"KHOSHOP2","Note":null,"TotalPrice":45000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4903367301475","ProductCode":"15PW70BQ132D","Quantity":1,"Price":45000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":45000.0}]},{"OrderResource":"KS2000000007","Description":null,"WarehouseCode":"KHOSHOP2","Note":null,"TotalPrice":414000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4903367301475","ProductCode":"15PW70BQ132D","Quantity":1,"Price":45000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":45000.0},{"Barcode":"4903301056065","ProductCode":"4TL95B93219S","Quantity":1,"Price":119000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":119000.0},{"Barcode":"4903301142065","ProductCode":"917R401C47W5","Quantity":2,"Price":125000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":250000.0}]}]} 
+ 
+==> [INFO] | 2018-10-22 17:22:02 | Saved order response: <ArrayOfOrderResult  ><OrderResult><OrderResource>KS2000000010</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><MessageCode>SUCCESS</MessageCode><Message>Order t?o thành công</Message></OrderResult><OrderResult><OrderResource>KS2000000007</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><MessageCode>SUCCESS</MessageCode><Message>Order t?o thành công</Message></OrderResult></ArrayOfOrderResult> 
+ 
+==> [INFO] | 2018-10-22 17:22:02 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 17:22:02 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-22 17:22:06 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-22 17:22:06 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 17:22:06 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-22 17:22:07 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-22 17:22:07 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-22 17:22:07 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [ERROR] | 2018-10-22 17:22:09 | System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.Connection.ReadCallback(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at LIB.API.IplAPI.<API_Warehouses_SyncDataProduct>d__2.MoveNext() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 210
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndRead(IAsyncResult asyncResult)
+   at System.Net.Connection.ReadCallback(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+ 
+ 

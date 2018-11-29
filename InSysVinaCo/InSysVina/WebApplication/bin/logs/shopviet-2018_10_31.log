@@ -1,0 +1,22 @@
+==> [ERROR] | 2018-10-31 18:17:58 | System.NullReferenceException: Object reference not set to an instance of an object.
+   at LibCore.Helper.Utility.FindSheetByName(SpreadsheetDocument document, String sheetName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\LibCore\Helper\Utility.cs:line 27
+   at LibCore.Helpers.ExcelTemplateHelper.DeleteSheet(String name) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\LibCore\Helper\ExcelTemplateHelper.cs:line 731
+   at LibCore.Helpers.ExcelTemplateHelper.Dispose() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\LibCore\Helper\ExcelTemplateHelper.cs:line 740
+   at WebApplication.Controllers.CardnumbersController.ExportReport(String txtSearch) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\Controllers\CardnumbersController.cs:line 65 
+ 
+==> [ERROR] | 2018-10-31 18:20:24 | System.IO.IOException: The process cannot access the file 'C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\Download\Export\CardNumbers_31-10-2018.xlsx' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at WebApplication.Controllers.CardnumbersController.ExportReport(String txtSearch) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\Controllers\CardnumbersController.cs:line 70 
+ 
+==> [ERROR] | 2018-10-31 18:45:19 | System.NullReferenceException: Object reference not set to an instance of an object.
+   at LIB.IplOrder.GetDataBill(Int64 OrderId) 
+ 
+==> [ERROR] | 2018-10-31 18:49:00 | System.ApplicationException: Attempting to cast a DBNull to a non nullable type! Note that out/return parameters will not have updated values until the data stream completes (after the 'foreach' for Query(..., buffered: false), or after the GridReader has been disposed for QueryMultiple)
+   at Dapper.DynamicParameters.Get[T](String name)
+   at LIB.Product.IplProduct.GetProductReport(bootstrapTableParam obj, Nullable`1 startDate, Nullable`1 endDate, Nullable`1 WarhouseId, Int32& totalRecord) 
+ 
+==> [ERROR] | 2018-10-31 18:57:07 | System.NullReferenceException: Object reference not set to an instance of an object.
+   at LIB.IplOrder.GetDataBill(Int64 OrderId) 
+ 

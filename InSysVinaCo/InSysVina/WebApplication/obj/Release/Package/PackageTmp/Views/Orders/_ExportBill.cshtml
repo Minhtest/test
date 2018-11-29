@@ -1,0 +1,137 @@
+﻿@using LIB.Warehouses
+@using System.Configuration
+@model LIB.Orders.BillModel
+@{
+    var warehouse = ViewBag.warehouse as WarehousesEntity;
+}
+<div>
+    <table style="width:100%;margin-bottom:10px;">
+        <tr>
+            <td><img src="@ConfigurationManager.AppSettings["UrlServer"]/@warehouse.Logo" style="margin:auto;display:block;max-height:50px;width:auto" /></td>
+            <td style="text-align:center;font-family:Arial; font-size:10px;">@warehouse.Name <br />@warehouse.Address<br />@warehouse.Phone</td>
+        </tr>
+    </table>
+    <div style="text-align:center;font-weight:bold;margin-bottom:5px;font-family:Arial; font-size:10px;">HÓA ĐƠN BÁN HÀNG</div>
+    <table style="width:100%">
+        <tr>
+            <td style="font-family:Arial; font-size:10px;">Ngày bán: @(Model.Order.OrderDate == null ? "Đang chờ thanh toán" : Model.Order.OrderDate.Value.ToString("dd/MM/yyyy HH:mm:ss"))</td>
+            <td style="text-align:right;font-family:Arial; font-size:10px;">HD: @Model.Order.OrderCode</td>
+        </tr>
+        <tr>
+            <td style="font-family:Arial; font-size:10px;">Quầy: @Request.Cookies["StallCookie"].Value</td>
+            <td style="text-align:right;font-family:Arial; font-size:10px;">NVBH: @Model.Order.ModifiedByCode.Replace(LIB.Enum.PrefixCode.User, "")</td>
+        </tr>
+    </table>
+    <div style="width:100%; border: 0.5px dashed #73879C; margin: 8px 0;"></div>
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th style="text-align:left;font-family:Arial; font-size:10px;">M.Hàng</th>
+                <th style="text-align:center;font-family:Arial; font-size:10px;">S.Lượng</th>
+                <th style="text-align:center;font-family:Arial; font-size:10px;">Đ.Giá</th>
+                <th style="text-align:right;font-family:Arial; font-size:10px;">T.Tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.listOrderDetail)
+            {
+                <tr>
+                    <td colspan="4" style="font-family:Arial; font-size:10px;">@item.ProductName</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;font-family:Arial; font-size:10px;">@item.Barcode</td>
+                    <td style="text-align:center;font-family:Arial; font-size:10px;" txtNumberMore>@item.Quantity</td>
+                    <td style="text-align:center;font-family:Arial; font-size:10px;" txtMoneyMore>@item.SellPrice</td>
+                    <td style="text-align:right;font-family:Arial; font-size:10px;" txtMoneyMore>@(item.SellPrice * item.Quantity - item.SellPrice * item.Quantity * item.Discount / 100)</td>
+                </tr>
+            }
+            @foreach (var item in Model.listProductPromotion)
+            {
+                <tr>
+                    <td colspan="4" style="font-family:Arial; font-size:10px;">@item.ProductName</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;font-family:Arial; font-size:10px;">@item.Barcode</td>
+                    <td style="text-align:center;font-family:Arial; font-size:10px;" txtNumberMore>@item.Quantity</td>
+                    <td colspan="2" style="text-align:left;font-family:Arial; font-size:10px;"><i>Khuyến mại</i></td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+    <div style="width:100%; border: 0.5px dashed #73879C; margin: 8px 0;"></div>
+    <table style="width:100%">
+        <tr>
+            <th style="text-align:left;font-family:Arial; font-size:10px;">THÀNH TIỀN</th>
+            <th style="text-align:right;font-family:Arial; font-size:10px;" txtMoneyMore>@Model.Order.ProductTotal</th>
+        </tr>
+        <tr>
+            <th style="text-align:left;font-family:Arial; font-size:10px;">TIỀN GIẢM GIÁ</th>
+            <th style="text-align:right;font-family:Arial; font-size:10px;" txtMoneyMore>@Model.Order.Discount</th>
+        </tr>
+        @if (Model.Customer != null)
+        {
+            <tr>
+                <th style="text-align:left;font-family:Arial; font-size:10px;">SỬ DỤNG ĐIỂM</th>
+                <th style="text-align:right;font-family:Arial; font-size:10px;" txtMoneyMore>@Model.Order.PointUsed</th>
+            </tr>
+        }
+        <tr>
+            <th style="text-align:left;font-family:Arial; font-size:10px;">TỔNG THANH TOÁN</th>
+            <th style="text-align:right;font-family:Arial; font-size:10px;" txtMoneyMore>@Model.Order.GrandTotal</th>
+        </tr>
+        <tr>
+            <th style="text-align:left;font-family:Arial; font-size:10px;">TIỀN KHÁCH ĐƯA</th>
+            <th style="text-align:right;font-family:Arial; font-size:10px;" txtMoneyMore>@((Model.Order.PayCash ?? 0) + (Model.Order.PayByCard ?? 0))</th>
+        </tr>
+        <tr>
+            <th style="text-align:left;font-family:Arial; font-size:10px;">TIỀN TRẢ LẠI</th>
+            <th style="text-align:right;font-family:Arial; font-size:10px;" txtMoneyMore>@Model.Order.RefundMoney</th>
+        </tr>
+    </table>
+    <div style="text-align:center;font-family:Arial; font-size:10px;">(Giá đã bao gồm thuế GTGT)</div>
+    @if (Model.Customer != null)
+    {
+        <div style="width:100%; border: 0.5px dashed #73879C; margin: 8px 0;"></div>
+        <table style="width:100%">
+            <tr>
+                <td style="text-align:left;font-family:Arial; font-size:10px;">Khách hàng</td>
+                <td style="text-align:right;font-family:Arial; font-size:10px;">@Model.Customer.Name</td>
+            </tr>
+            @if (Model.Customer.CardNumberId != null)
+            {
+                <tr>
+                    <td style="text-align:left;font-family:Arial; font-size:10px;">ID thẻ khách hàng</td>
+                    <td style="text-align:right;font-family:Arial; font-size:10px;">@(Model.Customer.CardNumberId == null ? "#############" :  Model.Customer.CardNumberId)</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;font-family:Arial; font-size:10px;">Điểm tích(1.000VND = 1 điểm)</td>
+                    <td style="text-align:right;font-family:Arial; font-size:10px;">@(Model.Order.CustomerId == null ? "0" : ViewBag.point)</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;font-family:Arial; font-size:10px;">Tổng tích điểm</td>
+                    <td style="text-align:right;font-family:Arial; font-size:10px;" txtNumberMore>@(Model.Order.CustomerId == null ? 0 : Model.Customer.Point)</td>
+                </tr>
+            }
+            <tr>
+                <td style="text-align:left;font-family:Arial; font-size:10px;">Số tham chiếu</td>
+                <td style="text-align:right;font-family:Arial; font-size:10px;">@(Model.Order.CustomerId == null ? "#########" : Model.Customer.CustomerCode)</td>
+            </tr>
+        </table>
+    }
+    <div style="width:100%; border: 0.5px dashed #73879C; margin: 8px 0;"></div>
+    <div style="text-align:center;font-family:Arial; font-size:10px;">
+        Chỉ xuất hóa đơn trong ngày<br />
+        Tax invoice will be issued within same day
+    </div>
+    <div style="width:100%; border: 0.5px dashed #73879C; margin: 8px 0;"></div>
+    <div style="text-align:center;font-family:Arial; font-size:10px;">
+        CẢM ƠN QUÝ KHÁCH VÀ HẸN GẶP LẠI<br />
+        Hotline: @warehouse.Hotline<br />
+        Website: @warehouse.Website
+    </div>
+    <br />
+    <div id="barcodecontainer" style="text-align:center;font-family:Arial; font-size:10px;">
+        <div id="barcode">@Model.Order.OrderCode.Replace(LIB.Enum.PrefixCode.Order, "")</div>
+    </div>
+</div>

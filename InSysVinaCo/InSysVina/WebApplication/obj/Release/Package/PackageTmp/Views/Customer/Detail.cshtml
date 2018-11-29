@@ -1,0 +1,17 @@
+﻿@model LIB.CustomerEntity
+@{
+    /**/
+
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="panel panel-info">
+    <div class="panel-heading">Thông tin khách hàng</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-4">
+                @Html.DisplayFor(t => t.Name):@Model.Name
+            </div>
+        </div>
+    </div>
+</div>

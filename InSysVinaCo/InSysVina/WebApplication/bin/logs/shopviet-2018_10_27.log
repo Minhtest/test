@@ -1,0 +1,178 @@
+==> [ERROR] | 2018-10-27 09:18:48 | System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '='.
+Incorrect syntax near ','.
+Incorrect syntax near the keyword 'AS'.
+Incorrect syntax near '='.
+Incorrect syntax near ','.
+Incorrect syntax near the keyword 'AS'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 322
+   at LIB.Product.IplProduct.GetDataProduct(bootstrapTableParam obj, Nullable`1 WarehouseId, Int32& totalRecord) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Product\IplProduct.cs:line 26
+ClientConnectionId:00b3b288-76a9-4184-84e0-7b73de905b4c
+Error Number:102,State:1,Class:15 
+ 
+==> [ERROR] | 2018-10-27 09:18:48 | System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.All[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApplication.Controllers.ProductsController.GetDataProducts(bootstrapTableParam obj, Nullable`1 WarehouseId) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\Controllers\ProductsController.cs:line 189 
+ 
+==> [ERROR] | 2018-10-27 09:18:57 | System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '='.
+Incorrect syntax near ','.
+Incorrect syntax near the keyword 'AS'.
+Incorrect syntax near '='.
+Incorrect syntax near ','.
+Incorrect syntax near the keyword 'AS'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 322
+   at LIB.Product.IplProduct.GetDataProduct(bootstrapTableParam obj, Nullable`1 WarehouseId, Int32& totalRecord) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Product\IplProduct.cs:line 26
+ClientConnectionId:00b3b288-76a9-4184-84e0-7b73de905b4c
+Error Number:102,State:1,Class:15 
+ 
+==> [ERROR] | 2018-10-27 09:18:57 | System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.All[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApplication.Controllers.ProductsController.GetDataProducts(bootstrapTableParam obj, Nullable`1 WarehouseId) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\Controllers\ProductsController.cs:line 189 
+ 
+==> [ERROR] | 2018-10-27 09:20:32 | System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '='.
+Incorrect syntax near ','.
+Incorrect syntax near the keyword 'AS'.
+Incorrect syntax near '='.
+Incorrect syntax near ','.
+Incorrect syntax near the keyword 'AS'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 322
+   at LIB.Product.IplProduct.GetDataProduct(bootstrapTableParam obj, Nullable`1 WarehouseId, Int32& totalRecord) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Product\IplProduct.cs:line 26
+ClientConnectionId:8c877bd2-3956-46c2-9e14-cfa921692d7b
+Error Number:102,State:1,Class:15 
+ 
+==> [ERROR] | 2018-10-27 09:21:26 | System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.All[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApplication.Controllers.ProductsController.GetDataProducts(bootstrapTableParam obj, Nullable`1 WarehouseId) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\Controllers\ProductsController.cs:line 189 
+ 
+==> [ERROR] | 2018-10-27 09:21:43 | System.AggregateException: One or more errors occurred. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:5455
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at LIB.APIExtension.PostKeyValue(Dictionary`2 dictionaryBody, String url) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\APIExtension.cs:line 19
+   at LIB.API.IplAPI.GetBearerTokenToWarehouse(String apiToken) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 45
+---> (Inner Exception #0) System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:5455
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---<---
+ 
+ 
+==> [INFO] | 2018-10-27 09:21:43 | Mã token: 
+ 
+==> [ERROR] | 2018-10-27 09:21:43 | Get token fail! 
+ 
+==> [INFO] | 2018-10-27 09:25:25 | Mã token:bearer xQnEgkym0-DDATmQl2TD1VFv_0wa4tq8E8kFeTIxDLIqF1vUVvQlGm9d8MBWm3rbltB0FXgMWGz2Biv4wyW4uckJ15K82c_cTBiq2PkgiJSladi0FhHrJpvY7D_6ooGyPhhoJJwyyECIwCvVcvW2uUokU5YAxiZIszyIz1J03dffacdQgWCuafBoGv88CHDjcglZiHAYyixZmN7EUKSqPMVYhOb8iYn2_ZJXSxIkTnMNULQv1jrduYUymfrPLpuv8Q4jAMSzHqUiePMivDhrgbYq-jL_9Vvq0yAABJOCvUZFXehtAvZkgMex-81phpaHpSabM9VKBmnBoUGVOt7WuA 
+ 
+==> [INFO] | 2018-10-27 09:25:25 | Data after serilze WarehousesId:{"WarehouseIds":"1034","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-27 09:25:31 | Data receive between 0 -> 100 | Total Row: 0 
+ 
+==> [INFO] | 2018-10-27 09:25:31 | End while! 
+ 
+==> [INFO] | 2018-10-27 09:25:31 | ProductSyncNew Success 
+ 
+==> [INFO] | 2018-10-27 09:26:17 | Mã token:bearer meWTZASt8PpXWkDtsZ9rwc_S1ny5Yj4h5D9fKyIm5s9_-nkId4SRZqS7yvDoOp_Ynkn9MWOBI3JhpX9q2m9KHLpauQFI5wa2xk8TunsrIX6_h5kOTsg9MKSXUuaAM5MFChRQ8ea9u75sNVMf9y38epTsCOp1LEJLAsndN60kzJo8pRXqgk56eyvFvbcYhC5CLMpfQvGAgRajltFeME0tiruNSc2ytgU3dnEbwm--1HYtxbIXjyRBzb_EkfVG04OV9S-ZNH9MWUbAvj-k_yIBBWh23mVm7XoGPpATmeILJC22EHJ-4kHnNsTzp2-0foDimkEhbo0R8nd3F1gS5Aw3-w 
+ 
+==> [INFO] | 2018-10-27 09:26:17 | Data after serilze WarehousesId:{"WarehouseIds":"1034","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-27 09:26:45 | Data receive between 0 -> 100 | Total Row: 0 
+ 
+==> [INFO] | 2018-10-27 09:26:45 | End while! 
+ 
+==> [INFO] | 2018-10-27 09:26:45 | ProductSyncNew Success 
+ 
+==> [INFO] | 2018-10-27 09:27:02 | Mã token:bearer LPA3AN0G18Eu4bnxprpcB11Z7yMX1zm_MPd4-sNCIEhMBaieRxTZNDP1O2g8KWKnqenP8m0SbQt2jZr9LAM7eaiLjTyYzUgpdlP3RNN3AuTGZ60AjKGG5GTXeBCo7DdPGMMStUTOXoRnqfrZAqyAxgbYPKQwU932q6eXG2dwshk1JrYTZxCiMVYDGS7ahro8yOUssiAAPEdCdOExbn4bafok0E1JbYl8xQsvJecwpIdxfSQ2B8qslv7iJt34utY53neI7raARmL4fcBzzI8XJ_V9z3mg2qVke55l9R9Ia6QGjTJap9KLxH6Mbt3GuKfAs8HrVeaPKhWW9oBxvaG9Vw 
+ 
+==> [INFO] | 2018-10-27 09:27:02 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-27 09:27:20 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-27 09:27:22 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":190,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-27 09:27:27 | Get Product success 
+ 
+==> [INFO] | 2018-10-27 09:27:27 | End while! 
+ 
+==> [INFO] | 2018-10-27 09:27:27 | ProductSyncNew Success 
+ 
+==> [INFO] | 2018-10-27 09:29:10 | Mã token:bearer Raj1RFsq8iSkZnsLlAbG7ar2RzntzSNspPyy97htIUPIYt97DisQZtBnUWxMsYR9iW1lmi1XM3WEBqv9TPbe-4JwbGQSiBiTCWNNEPZYx9UW2QQ0lFILtdJPGFFHzDRkFGedF_4sBYqyEzCXDzsr8jXei2D9D2LroVDCsR5INbX_WzIBJWO0rMlSJxPN1tBSju6ux7zgVw3Hc--TX2y_WPllzEZ4Ev6yRESI6GqraKzyDcWedLv2_HdFgIwNx0tvzZtLXeRQ5eVo-IxZWXd6k1bWmhLq1vDeKAR5HmVmcvh-Kw2rJaNhxArv_YkEgTGxdaiu2dpUuMTDKwNE2QdNeD3ET5vlOwyyAvsfBdHDIYg 
+ 
+==> [INFO] | 2018-10-27 09:29:10 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-27 09:29:20 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-27 09:29:22 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":190,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-27 09:33:10 | Get Product success 
+ 
+==> [INFO] | 2018-10-27 09:33:10 | End while! 
+ 
+==> [INFO] | 2018-10-27 09:33:10 | ProductSyncNew Success 
+ 

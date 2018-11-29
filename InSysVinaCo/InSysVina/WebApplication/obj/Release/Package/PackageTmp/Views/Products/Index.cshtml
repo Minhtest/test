@@ -1,0 +1,73 @@
+﻿@using LIB.Warehouses
+@using WebApplication.Authorize
+@using System.Configuration
+@{
+    ViewBag.Title = "Danh sách sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var acc = User as CustomPrincipal;
+    var AllWarehouse = ViewBag.AllWarehouse as List<WarehousesEntity>;
+}
+@section styles_plugins{
+}
+@section scripts_plugins{
+    <script src="~/Content/js/bootstrap-editable.min.js"></script>
+    <script src="~/Content/js/bootstrap-table-editable.min.js"></script>
+}
+
+@section scripts{
+    <script src="~/Scripts/controller/Products.js"></script>
+}
+<div class="panel panel-default">
+    <div class="panel-heading">Danh sách sản phẩm</div>
+    <div class="panel-body">
+        <div id="toolbar">
+            <form id="filter" class="form-inline" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input value="@acc.WarehouseId" id="WarehousIdOfCus" hidden />
+                    @if (acc.IsSupperAdmin)
+                    {
+                        <div class="input-group">
+                            <span class="input-group-addon">ShowRoom</span>
+                            <select class="form-control" id="drdWarehouse">
+                                @foreach (var item in AllWarehouse)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </select>
+                        </div>
+                    }
+                    @if (!acc.IsStaff)
+                    {
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                @*@if ((ViewBag.IsSync == false && ViewBag.IsSync != null) || acc.IsSupperAdmin)
+                                {
+                                    //@Html.ActionLink("Thêm Mới", "Create", null, new { @class = "btn btn-success", @id="btnCreate" })*@
+                                    @*<a class="btn btn-success" href="/Products/Create" id="btnCreate">Thêm mới</a>*@
+                                @*}*@
+
+                                @{if (DateTime.Now.Hour > int.Parse(ConfigurationManager.AppSettings["earlyTime"]) && DateTime.Now.Hour < int.Parse(ConfigurationManager.AppSettings["lateTime"]) || acc.IsSupperAdmin)
+                                    {
+                                        <button type="button" class="btn btn-info" id="btnSynProduct"><i class="fas fa-sync-alt"></i> Đồng bộ sản phẩm mới</button>
+                                    }
+                                }
+
+                                <button type="button" id="btnExportExcelProduct" class="btn btn-danger">Export Excel</button>
+                                @if ((ViewBag.IsSync == false && ViewBag.IsSync != null) || acc.IsSupperAdmin)
+                                {
+                                    <button type="button" id="btnImportExcelProduct" class="btn btn-primary" data-toggle="modal" data-target="#createCustomerModal">Import Excel</button>
+                                }
+                                <input id="ipIEProduct" type="file" name="fileImportExcel" style="display:none" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+                                <input type="text" id="WareHouseId" name="WareHouseId" style="display:none" value="@acc.WarehouseId" />
+
+                            </span>
+                        </div>
+                        <a href="@System.Configuration.ConfigurationManager.AppSettings["urlTemplateImportProduct"]">>>Template</a>
+                    }
+                </div>
+            </form>
+        </div>
+        <table id="tableProducts"></table>
+    </div>
+</div>
+@Html.Partial("_ImportProducts", new LIB.CustomerEntity())

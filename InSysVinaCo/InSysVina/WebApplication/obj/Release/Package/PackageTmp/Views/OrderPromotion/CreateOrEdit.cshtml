@@ -1,0 +1,106 @@
+﻿@using LIB.Warehouses
+@using WebApplication.Authorize
+@model LIB.OrderEntity
+@{
+    ViewBag.Title = "Khuyến mại đơn hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var AllWarehouse = ViewBag.AllWarehouse as List<WarehousesEntity>;
+    var acc = User as CustomPrincipal;
+}
+@section styles_plugins{
+    <link href="~/Content/css/bootstrap-table.min.css" rel="stylesheet" />
+    <link href="~/Content/css/select2.min.css" rel="stylesheet" />
+    @* use Editable *@
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap-editable.css" />
+    @* end use Editable *@
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap-datepicker3.min.css" />
+}
+@section scripts_plugins{
+    <script src="~/Content/js/bootstrap-table.min.js"></script>
+    <script src="~/Content/js/bootstrap-table-vi-VN.min.js"></script>
+    <script src="~/Content/js/select2.full.min.js"></script>
+
+    @* use Editable *@
+    <script src="~/Content/js/bootstrap-table-editable.min.js"></script>
+    <script src="~/Content/js/bootstrap-editable.min.js"></script>
+    @* end use Editable *@
+
+    @* Autonumeric *@
+    <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.1.0"></script>
+    @* datepicker *@
+    <script src="~/Content/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/Content/js/bootstrap-datepicker.vi.min.js"></script>
+}
+@section scripts{
+    <script src="~/Scripts/controller/OrderPromotion.js"></script>
+}
+
+@Html.TextBoxFor(m => m.Id, new { style = "display:none" })
+@Html.TextBoxFor(m => m.OrderCode, new { style = "display:none" })
+<div class="panel-title">Khuyến mại đơn hàng</div>
+<div class="row" style="margin-top:15px;">
+    @if (acc.IsSupperAdmin)
+    {
+        <div class="col-sm-4">
+            <div class="input-group">
+                <span class="input-group-addon">ShowRoom</span>
+                <select class="form-control" id="drdWarehouse">
+                    @foreach (var item in AllWarehouse)
+                    {
+                        <option value="@item.Id" @(item.Id == Model.WarehouseId ? "selected" : "")>@item.Name</option>
+                    }
+                </select>
+            </div>
+        </div>
+    }
+    <div class="col-sm-4">
+        <div class="input-group">
+            <label class="input-group-addon" for="">Đơn Hàng</label>
+            @*@if (ViewBag.Action == 1)
+            {*@
+                <select id="drdOrder" class="form-control"></select>
+            @*}
+            else
+            {
+                <select id="drdOrder" class="form-control" disabled></select>
+            }*@
+
+        </div>
+    </div>
+</div>
+<div class="title-group"><span>Sản phẩm bán</span></div>
+<table id="tblDataProductSell"></table>
+<div class="title-group"><span>Khuyến mại</span></div>
+
+
+<div class="panel panel-info">
+    <div class="panel-body">
+        <div class="product" hidden>
+            <div class="input-group">
+                <label class="input-group-addon" for="">SP khuyến mại</label>
+                <select id="drdProduct" class="form-control"></select>
+            </div>
+        </div>
+        <input value="@ViewBag.Action" hidden="hidden" id="vbaction"/>
+        <table id="tblDataProduct"></table>
+    </div>
+    <div class="panel-footer">
+        <div class="clearfix">
+            <div class="pull-right">
+                <a href="/OrderPromotion"><i class="fas fa-angle-double-left"></i> Quay Lại Danh Sách</a>
+                @if (ViewBag.Action == 2)
+                {
+                    <button class="btn btn-danger" id="btnCancel">Hủy khuyến mại</button>
+                }
+                @if (ViewBag.Action != 3)
+                {
+                    <button class="btn btn-primary" id="btnSave">Lưu khuyến mại</button>
+                    <button class="btn btn-success" id="btnOk">Xác nhận khuyến mại</button>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,361 @@
+==> [ERROR] | 2018-11-02 18:54:18 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 18:54:24 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 18:55:01 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 18:55:08 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 18:55:18 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 18:55:26 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 18:55:34 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 18:56:12 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 18:57:11 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 18:57:23 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 19:00:53 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 19:01:00 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 19:11:04 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 19:11:12 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 19:11:31 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 19:11:33 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 19:11:33 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 19:11:34 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 19:11:40 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 19:11:48 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [ERROR] | 2018-11-02 19:11:49 | System.ArgumentException: Keyword not supported: '125.212.233.145\mssqlserver14;initial catalog'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(DbConnectionPoolKey key, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(DbConnectionPoolKey key)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString, SqlCredential credential)
+   at System.Data.SqlClient.SqlConnection..ctor(String connectionString)
+   at Framework.Data.ADOProvider.get_Connection() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 47
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 290
+   at LIB.IplUser.Login(String userName) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Users\IplUser.cs:line 19 
+ 
+==> [INFO] | 2018-11-02 20:03:29 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-11-02 20:03:35 | API:http://localhost:5455/token 
+ 
+==> [INFO] | 2018-11-02 20:04:32 | Mã token:bearer v2uHj-uFawlAaztG8tAMTrO84r10kb09iKAG3dQ3L4TPb6xtHWNgqIFDcVdTVRV8sMN8IpdeikoCRrLJO6ZxTEjzriGavM9FOMVhn-ra-bz3blvlzb1rviI7xwl5A5bEZlGb29kKmHwEbgXVLWc11emnG5ikAgJ2NTw4KbIIgidvt7UgODPsB6GMMynC17pDBBLNGPro7WvdFYaVpZyOZ6ZXdt0O_2ngc8qL7qKU-jjM2Ba79rrOZPbwqi4sftiTSvlqlOnZVO76nkYJWmCqG8gdT8nEv8NXgS3uo3k-awc-WYohEHEj1AJ8TSjTBrvh_iC-KCneuHGLJZm69zyKEW-3k-lWfz5qhj5xf5aX29U 
+ 
+==> [INFO] | 2018-11-02 20:04:52 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>MT000000005</OrderResource><WarehouseCode>MT</WarehouseCode><TotalPrice>154000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4972233252271</Barcode><ProductCode>J1I7M8835G39</ProductCode><Quantity>1</Quantity><Price>154000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>154000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-11-02 20:05:14 | Data after convert xml -> json:{"OrderShops":[{"OrderResource":"MT000000005","Description":null,"WarehouseCode":"MT","Note":null,"TotalPrice":154000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4972233252271","ProductCode":"J1I7M8835G39","Quantity":1,"Price":154000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":154000.0}]}]} 
+ 
+==> [INFO] | 2018-11-02 20:06:12 | API Order: http://localhost:5455/api/Orders/SubmitOrderShop 
+ 
+==> [ERROR] | 2018-11-02 20:08:14 | System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at LIB.API.IplAPI.<API_Warehouses_SyncDataProduct>d__2.MoveNext() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 214
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+ 
+ 
+==> [INFO] | 2018-11-02 20:29:23 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-11-02 20:29:31 | API:http://localhost:5455/token 
+ 
+==> [INFO] | 2018-11-02 20:30:01 | Mã token:bearer AKQP2YBYi534Kj9BITB9LMObh72J_EfF-19WN-b_ja6mQfNWNXAkS362ULLgde948Q8vbYG-QTh_1A5IYUubk-AbjDFVLAqHCAc98IiaL4wPLs5XvepNt1joa3EHzHFyU3b7oYeQEDpr6EQz0v5XGvtTiStCeKWztn8yUwWKY9nVeQuPafecxg71i8bz4AvE9H31HfGm_NIKcDnxAAQPMtUNnxt9-dM2IOZ3gxLHEf6ZPAZfK6fT41epgoSWG6-mFRoK_QjAr3kTVyHLl7WU9tzp4P3T_z01K_XUS-AoqAuOGSKO3kRivH_k2JJs_9lKcQgti4W_qcadl850SWZiEDNZ6x5adjBIy8JKDI1jjm0 
+ 
+==> [INFO] | 2018-11-02 20:30:16 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>MT000000006</OrderResource><WarehouseCode>MT</WarehouseCode><TotalPrice>70000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4972233252265</Barcode><ProductCode>2J43H24TMNQW</ProductCode><Quantity>1</Quantity><Price>70000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>70000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-11-02 20:30:21 | Data after convert xml -> json:{"OrderShops":[{"OrderResource":"MT000000006","Description":null,"WarehouseCode":"MT","Note":null,"TotalPrice":70000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4972233252265","ProductCode":"2J43H24TMNQW","Quantity":1,"Price":70000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":70000.0}]}]} 
+ 
+==> [INFO] | 2018-11-02 20:30:24 | API Order: http://localhost:5455/api/Orders/SubmitOrderShop 
+ 
+==> [INFO] | 2018-11-02 20:31:37 | ResultMethod: POST, RequestUri: 'http://localhost:5455/api/Orders/SubmitOrderShop', Version: 1.1, Content: System.Net.Http.StringContent, Headers:
+{
+  Accept: application/json
+  Authorization: bearer AKQP2YBYi534Kj9BITB9LMObh72J_EfF-19WN-b_ja6mQfNWNXAkS362ULLgde948Q8vbYG-QTh_1A5IYUubk-AbjDFVLAqHCAc98IiaL4wPLs5XvepNt1joa3EHzHFyU3b7oYeQEDpr6EQz0v5XGvtTiStCeKWztn8yUwWKY9nVeQuPafecxg71i8bz4AvE9H31HfGm_NIKcDnxAAQPMtUNnxt9-dM2IOZ3gxLHEf6ZPAZfK6fT41epgoSWG6-mFRoK_QjAr3kTVyHLl7WU9tzp4P3T_z01K_XUS-AoqAuOGSKO3kRivH_k2JJs_9lKcQgti4W_qcadl850SWZiEDNZ6x5adjBIy8JKDI1jjm0
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 310
+} 
+ 
+==> [INFO] | 2018-11-02 20:33:56 | Saved order response: <ArrayOfOrderResult  ><OrderResult><OrderResource>MT000000006</OrderResource><WarehouseCode>MT</WarehouseCode><MessageCode>SUCCESS</MessageCode><Message>Order t?o thành công</Message></OrderResult></ArrayOfOrderResult> 
+ 
+==> [ERROR] | 2018-11-02 20:33:56 | System.NullReferenceException: Object reference not set to an instance of an object.
+   at LIB.API.IplAPI.<API_Warehouses_SyncDataProduct>d__2.MoveNext() 
+ 
+==> [INFO] | 2018-11-02 20:42:34 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-11-02 20:42:40 | API:http://localhost:5455/token 
+ 
+==> [INFO] | 2018-11-02 20:42:43 | Mã token:bearer wDnIiqUazw9Nx5gRbZbZFpMwe5tTXJDKtxSS4Y56ayWh76Yrd6-1lD404nmVapSYnn4uHT6wDTrjhyapL9nGMxNPFOS9bnAh8loyKb84qokxGVvRHXiXcoPDPmSfZbxwLgow3LIv-mR4v7Qn5i-cQEDNAQHSoryW4ABYEmVfdwYWq-DR4ZR899_8yazagBR2SOaP1Jw9_s-c8rjkJNVn4KEqsNuP-GOLuj8zMXCcSHwrV5e1uYEWBtZqh7sr44D7Gia_oJMhTFlDjbjSOqa793Z9zDZ8tmOwYZY05_Y_TqEfwDlMdl1bW-e8xUwK35QO7tjHusQlOmlnEgzVE-dpzg 
+ 
+==> [INFO] | 2018-11-02 20:42:49 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>MT000000007</OrderResource><WarehouseCode>MT</WarehouseCode><TotalPrice>70000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4972233252263</Barcode><ProductCode>GU0BT7TL0293</ProductCode><Quantity>1</Quantity><Price>70000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>70000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-11-02 20:42:54 | Data after convert xml -> json:{"OrderShops":[{"OrderResource":"MT000000007","Description":null,"WarehouseCode":"MT","Note":null,"TotalPrice":70000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4972233252263","ProductCode":"GU0BT7TL0293","Quantity":1,"Price":70000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":70000.0}]}]} 
+ 
+==> [INFO] | 2018-11-02 20:42:55 | API Order: http://localhost:5455/api/Orders/SubmitOrderShop 
+ 
+==> [ERROR] | 2018-11-02 20:45:19 | System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at LIB.API.IplAPI.<API_Warehouses_SyncDataProduct>d__2.MoveNext() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 214
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+ 
+ 

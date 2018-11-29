@@ -1,0 +1,41 @@
+﻿@section styles_plugins{
+    <link href="~/Content/css/bootstrap-table.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-editable.css" rel="stylesheet" />
+}
+@section scripts_plugins{
+    <script src="~/Content/js/bootstrap-table.min.js"></script>
+    <script src="~/Content/js/bootstrap-table-vi-VN.min.js"></script>
+    <script src="~/Content/js/bootstrap-editable.min.js"></script>
+    <script src="~/Content/js/bootstrap-table-editable.min.js"></script>
+}
+    <style>
+        .btnDelete:hover {
+            cursor: pointer
+        }
+        .btnDelete{
+            margin-left:3px;
+        }
+    </style>
+@section scripts{
+    <script src="~/Scripts/controller/SyncSetting.js"></script>
+}
+<div class="panel panel-info">
+    <div class="panel-heading">
+        Danh sách kết nối api
+    </div>
+
+    <div class="panel-body">
+        <div id="toolbar">
+            <form id="filter" class="form-inline" enctype="multipart/form-data">
+                <div class="form-group">
+
+                    <div class="input-group" style="margin-bottom:0">
+                        <a href="/SyncSetting/Create" id="btnAddCardNumber"  class="btn btn-primary">Thêm Mới</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <table id="tableApiConnect"></table>
+    </div>
+
+</div>
