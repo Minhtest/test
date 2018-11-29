@@ -1,0 +1,112 @@
+﻿@*@using WebApplication.Authorize
+    @{
+        var acc = User as CustomPrincipal;
+    }
+    <div class="menu_section">
+        <div style="font-size:16px;background-color:#1c3148;padding:10px 0"><h3>Danh Mục</h3></div>
+        <ul class="nav side-menu">
+
+            <li><a href="@Url.Action("Index", "Orders")" class="menu-item" data-type="input"><i class="fas fa-list"></i> Danh sách đơn hàng <span style="color:coral;float:right" class="shortcut">[ Ctrl+Q ]</span></a></li>
+            <li><a href="@Url.Action("Create", "Orders")" class="menu-item" data-type="analytic"><i class="fas fa-edit"></i> Tạo đơn hàng <span style="color:coral;float:right">[ Ctrl+B ]</span></a></li>
+
+            <li><a href="@Url.Action("PonationOrders", "Orders")" class="menu-item" data-type="analytic"><i class="fas fa-paw"></i> Tặng hàng khuyến mại </a></li>
+
+            <li><a href="@Url.Action("Index", "Products")" class="menu-item" data-type="input"> <i class="fas fa-th"></i> Sản Phẩm</a></li>
+            <li><a href="@Url.Action("Index", "Customer")" class="menu-item" data-type="input"><i class="fas fa-users"></i> Khách Hàng</a></li>
+
+            <li><a href="@Url.Action("Index", "Return")" class="menu-item" data-type="input"><i class="fas fa-angle-double-right"></i> Trả Hàng</a></li>
+
+            <li><a href="@Url.Action("DetailGeneral", "Report")" class="menu-item" data-type="input"><i class="far fa-newspaper"></i> Báo Cáo Chi Tiết Tổng Hợp</a></li>
+            <li>
+                <a><i class="fas fa-desktop"></i> Báo Cáo Khác<span class="fas fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="@Url.Action("Report", "Orders")" class="menu-item" data-type="input">Theo Hóa Đơn</a></li>
+                    <li><a href="@Url.Action("Report", "Products")" class="menu-item" data-type="input">Theo Sản Phẩm</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/Template" class="menu-item" target="_blank"><i class="fas fa-file-excel"></i> Template</a></li>
+
+        </ul>
+
+        @if (acc.RoleLevel <= (int)enumRoleLevel.Manager)
+        {
+            <div style="font-size:16px;background-color:#1c3148;padding:10px 0"><h3>Quản Trị</h3></div>
+            <ul class="nav side-menu">
+                @if (acc.IsSupperAdmin)
+                {
+                    <li><a href="/Users" class="menu-item"><i class="fas fa-users-cog"></i> Q.lý người dùng</a></li>
+                    <li><a href="/RoleModule" class="menu-item"><i class="fas fa-th"></i> Phân quyền</a></li>
+                    <li><a href="/Warehouses" class="menu-item"><i class="fas fa-store"></i> Quản Lý Showroom</a></li>
+                }
+                else
+                {
+                    <li><a href="/Warehouses/Edit/@acc.WarehouseId" class="menu-item"><i class="fas fa-store"></i> Thông Tin Showroom</a></li>
+                }
+            </ul>
+        }
+    </div>*@
+
+@{
+    var listMenu = WebApplication.Helpers.GenMenu.GetListMenu();
+    if (listMenu.Count > 0)
+    {
+<div class="menu_section">
+    @{
+        var listCategory = listMenu.Where(t => t.IdCategory != null).ToList();
+        foreach (var itcate in listCategory)
+        {
+            var listMenuParent = listMenu.Where(t => t.Category == itcate.IdCategory && t.ParentId == null).ToList();
+            if (listMenuParent.Count > 0)
+            {
+                <div style="font-size:16px;background-color:#1c3148;padding:10px 0"><h3>@itcate.Text</h3></div>
+                <ul class="nav side-menu">
+                    @{
+                        foreach (var menuParent in listMenuParent)
+                        {
+                            var listMenuChild = listMenu.Where(t => t.ParentId == menuParent.Id).ToList();
+                            if (listMenuChild.Count == 0)
+                            {
+                                <li>
+                                    <a href="@menuParent.URL" class="menu-item" data-type="input">
+                                        <i class="@menuParent.ClassIcon"></i> @menuParent.Text
+                                        @{
+                                            if (menuParent.Shortcut != null)
+                                            {
+                                                <span style='color: coral; float:right' class='shortcut'>@menuParent.Shortcut</span>
+                                            }
+                                        }
+                                    </a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li>
+                                    <a><i class="@menuParent.ClassIcon"></i> @menuParent.Text<span class="fas fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        @{
+                                            foreach (var menuChild in listMenuChild)
+                                            {
+                                                <li><a href="@menuChild.URL" class="menu-item" data-type="input"> @menuChild.Text</a></li>
+                                            }
+                                        }
+                                    </ul>
+                                </li>
+                            }
+
+                        }
+                    }
+                </ul>
+            }
+
+        }
+    }
+
+</div>
+    }
+    else
+    {
+
+    }
+}
+

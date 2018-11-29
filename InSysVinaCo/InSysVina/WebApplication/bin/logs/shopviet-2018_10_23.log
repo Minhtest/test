@@ -1,0 +1,884 @@
+==> [INFO] | 2018-10-23 08:42:33 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-23 08:42:40 | API:http://localhost:5455/token 
+ 
+==> [INFO] | 2018-10-23 08:43:14 | Mã token:bearer LkiLamv9YWVy_Gnn9-L9EfhitKagkV9taC4MXeXd_xCs3cxDu8916BJj6xCC-JzJ_EgmjodLCgr64uOQw6O6Ng32mMfChJiznL6Nb_ftRlyFYnLfj1AiHM6XcunJYBt455HGFtljgAcpOjnBMT29K0-gmQt3ICID9nPeTFBz6kvPjoGBgrJIyXljVNNXZkJ_qJBVpDEEaLhEdde5aHNJndXcuvB0nzQHoYByl9BeY7vK5GhqGrGNf5BX3WW3pV7dEyoIygxUKSeZcSP7VYkQQtsSsstdgZbFf_PluszkBXg2UbpgWDpa6yULtx83sxeixzsGfLtxX5_3scCPMVgjzA 
+ 
+==> [INFO] | 2018-10-23 08:43:27 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KS2000000012</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>119000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903301056065</Barcode><ProductCode>4TL95B93219S</ProductCode><Quantity>1</Quantity><Price>119000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>119000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>KS2000000011</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>600000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4028898012226</Barcode><Quantity>30</Quantity><Price>20000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>600000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-23 08:43:33 | Data after convert xml -> json:{"OrderShops":[{"OrderResource":"KS2000000012","Description":null,"WarehouseCode":"KHOSHOP2","Note":null,"TotalPrice":119000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4903301056065","ProductCode":"4TL95B93219S","Quantity":1,"Price":119000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":119000.0}]},{"OrderResource":"KS2000000011","Description":null,"WarehouseCode":"KHOSHOP2","Note":null,"TotalPrice":600000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4028898012226","ProductCode":null,"Quantity":30,"Price":20000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":600000.0}]}]} 
+ 
+==> [INFO] | 2018-10-23 08:44:49 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-23 08:45:22 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KHOTT000000009</OrderResource><WarehouseCode>0001</WarehouseCode><TotalPrice>6390000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4990127200765</Barcode><ProductCode>9EF58ZGI069A</ProductCode><Quantity>18</Quantity><Price>355000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>6390000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>KHOTT000000008</OrderResource><WarehouseCode>0001</WarehouseCode><TotalPrice>710000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4990127200765</Barcode><ProductCode>9EF58ZGI069A</ProductCode><Quantity>2</Quantity><Price>355000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>710000.000000</TotalPrice><Type>Sell</Type></OrderItem><OrderItem><Barcode>4990127200765</Barcode><ProductCode>9EF58ZGI069A</ProductCode><Quantity>4</Quantity><Price>0.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>0.000000</TotalPrice><Type>Promotion</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-23 08:45:22 | Data after convert xml -> json:{"OrderShops":[{"OrderResource":"KHOTT000000009","Description":null,"WarehouseCode":"0001","Note":null,"TotalPrice":6390000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4990127200765","ProductCode":"9EF58ZGI069A","Quantity":18,"Price":355000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":6390000.0}]},{"OrderResource":"KHOTT000000008","Description":null,"WarehouseCode":"0001","Note":null,"TotalPrice":710000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4990127200765","ProductCode":"9EF58ZGI069A","Quantity":2,"Price":355000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":710000.0},{"Barcode":"4990127200765","ProductCode":"9EF58ZGI069A","Quantity":4,"Price":0.0,"Type":"Promotion","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":0.0}]}]} 
+ 
+==> [INFO] | 2018-10-23 08:45:45 | Saved order response: <ArrayOfOrderResult  ><OrderResult><OrderResource>KHOTT000000009</OrderResource><WarehouseCode>0001</WarehouseCode><MessageCode>SUCCESS</MessageCode><Message>Order t?o thành công</Message></OrderResult><OrderResult><OrderResource>KHOTT000000008</OrderResource><WarehouseCode>0001</WarehouseCode><MessageCode>SUCCESS</MessageCode><Message>Order t?o thành công</Message></OrderResult></ArrayOfOrderResult> 
+ 
+==> [INFO] | 2018-10-23 08:45:45 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>OC000000019</OrderResource><WarehouseCode>0001</WarehouseCode><TotalPrice>149000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903301452416</Barcode><Quantity>1</Quantity><Price>149000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>149000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-23 08:45:45 | Data after convert xml -> json:{"OrderShops":[{"OrderResource":"OC000000019","Description":null,"WarehouseCode":"0001","Note":null,"TotalPrice":149000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4903301452416","ProductCode":null,"Quantity":1,"Price":149000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":149000.0}]}]} 
+ 
+==> [INFO] | 2018-10-23 08:45:46 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-23 08:45:46 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:45:46 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:45:47 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:45:47 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:45:47 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:45:48 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:45:48 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:45:48 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:45:54 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:45:54 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:45:54 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:45:58 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:45:58 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:45:58 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:45:59 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:45:59 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:45:59 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:45:59 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:45:59 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:45:59 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:00 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:00 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:00 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:01 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:01 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:01 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:01 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:01 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:01 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:02 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:02 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:02 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:02 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:02 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:02 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:02 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:02 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:02 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:03 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:03 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:03 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:03 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:03 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:03 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:03 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:03 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:03 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:03 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:03 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:03 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:04 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:04 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:04 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:04 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:04 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:04 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:04 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:04 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:04 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:05 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:05 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:05 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:06 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:06 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:06 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:09 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:09 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:09 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:10 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:10 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:10 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:10 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:10 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:10 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:10 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:10 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:10 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:11 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:11 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:11 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:11 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:11 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:11 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:12 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:12 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:12 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:12 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:12 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:12 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:13 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:13 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:13 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:14 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:14 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:14 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:14 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:14 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:14 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:15 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:15 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:15 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:17 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:17 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:17 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:17 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:17 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:17 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:17 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:17 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:17 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:17 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:46:18 | End while! 
+ 
+==> [INFO] | 2018-10-23 08:46:32 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-23 08:46:34 | API:http://localhost:5455/token 
+ 
+==> [INFO] | 2018-10-23 08:46:41 | Mã token:bearer k7ka2MMz85l5GzwToRLjPBaJP27FEVunqFQart-GXcRMlwjchoXGYVS1NSI5ShrR1ZilkmMCqsDIRSWH6AuIh4geVim8nlsnPbyEgxgRp0ORWwPPB9v-7rVpHDPN2vvhrzpl_cC32rjpqBzxqNJDkT83i78rfW4kXhIkaDFq42VXQIy86vovpeG7wiNUzfJ2242HFsokbseLDCeFTPN9Fmr60GytZquXLIirWS1eeq09NrQ7RkjtldkwcHplrj3w-brcR3UWNrNJutkRzWYOI9RooN__VoueYifcIdfBN_UIHGpTLZTMLZ0dgkUPpAwrGphS9hEE45833L6w_ojjWg 
+ 
+==> [INFO] | 2018-10-23 08:54:21 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KS2000000012</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>119000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4903301056065</Barcode><ProductCode>4TL95B93219S</ProductCode><Quantity>1</Quantity><Price>119000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>119000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>KS2000000011</OrderResource><WarehouseCode>KHOSHOP2</WarehouseCode><TotalPrice>600000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4028898012226</Barcode><Quantity>30</Quantity><Price>20000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>600000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-23 08:54:21 | Data after convert xml -> json:{"OrderShops":[{"OrderResource":"KS2000000012","Description":null,"WarehouseCode":"KHOSHOP2","Note":null,"TotalPrice":119000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4903301056065","ProductCode":"4TL95B93219S","Quantity":1,"Price":119000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":119000.0}]},{"OrderResource":"KS2000000011","Description":null,"WarehouseCode":"KHOSHOP2","Note":null,"TotalPrice":600000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4028898012226","ProductCode":null,"Quantity":30,"Price":20000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":600000.0}]}]} 
+ 
+==> [INFO] | 2018-10-23 08:54:23 | Don't know Status: False 
+ 
+==> [INFO] | 2018-10-23 08:54:24 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>KHOTT000000005</OrderResource><WarehouseCode>0001</WarehouseCode><TotalPrice>658500.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4990127200765</Barcode><ProductCode>9EF58ZGI069A</ProductCode><Quantity>2</Quantity><Price>355000.00</Price><Discount>17750.000000</Discount><PercentDiscount>5.00</PercentDiscount><TotalPrice>674500.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>OC000000001</OrderResource><WarehouseCode>0001</WarehouseCode><TotalPrice>355000.00</TotalPrice><TypeOrder>1</TypeOrder><OrderItems><OrderItem><Barcode>4990127200765</Barcode><ProductCode>9EF58ZGI069A</ProductCode><Quantity>1</Quantity><Price>355000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>355000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-23 08:54:24 | Data after convert xml -> json:{"OrderShops":[{"OrderResource":"KHOTT000000005","Description":null,"WarehouseCode":"0001","Note":null,"TotalPrice":658500.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4990127200765","ProductCode":"9EF58ZGI069A","Quantity":2,"Price":355000.0,"Type":"Sell","Discount":17750.0,"PercentDiscount":5.0,"TotalPrice":674500.0}]},{"OrderResource":"OC000000001","Description":null,"WarehouseCode":"0001","Note":null,"TotalPrice":355000.0,"TypeOrder":"1","OrderItems":[{"Barcode":"4990127200765","ProductCode":"9EF58ZGI069A","Quantity":1,"Price":355000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":355000.0}]}]} 
+ 
+==> [INFO] | 2018-10-23 08:54:26 | Saved order response: <ArrayOfOrderResult  ><OrderResult><OrderResource>KHOTT000000005</OrderResource><WarehouseCode>0001</WarehouseCode><MessageCode>SUCCESS</MessageCode><Message>Order t?o thành công</Message></OrderResult><OrderResult><OrderResource>OC000000001</OrderResource><WarehouseCode>0001</WarehouseCode><MessageCode>SUCCESS</MessageCode><Message>Order t?o thành công</Message></OrderResult></ArrayOfOrderResult> 
+ 
+==> [INFO] | 2018-10-23 08:54:26 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:26 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:32 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:32 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:32 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:35 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:35 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:35 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:35 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:36 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:37 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:37 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:37 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:40 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:41 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Get order submit:<OrderPost /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Data after convert xml -> json:{"OrderShops":[]} 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | Saved order response: <ArrayOfOrderResult   /> 
+ 
+==> [INFO] | 2018-10-23 08:54:42 | End while! 
+ 
+==> [INFO] | 2018-10-23 08:57:54 | Mã token:bearer pfK7p5JdM8VfvspBHmGrjdpY1ahe8WebgG8OW2H5PKfLk_8_VWcMHfTQFiW1J099kXqlRYcjBuf7tU4V7lRxKTiABD-xXlzTJ58TKjmBovL_txbwEfIu2gWWX1TTbHxAYi-UXlXgEpnM6ao-DIKU3WZymPpck3DPknwQDbYy_enNgII4NkIcYnoK17YiQIS2DElV_1VjIT8Fpm_wWxpVZAZpIjWmDUsWIYFbDBqT8PYpdhiJCe86yzzc9nOBxi5kJ3k_z4UEu9b_NVAsFViyUddtuGPu9_qcA5DxgnPpxRL_npxUzxHCq0vQEEVhjR1XWmlEqdpGy1iOfoB_m7WAvA 
+ 
+==> [INFO] | 2018-10-23 08:58:15 | Data after serilze WarehousesId:{"WarehouseIds":"1034","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-23 09:00:48 | Data after serilze WarehousesId:{"WarehouseIds":"1034","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-23 09:01:29 | Data receive between 0 -> 100 | Total Row: 0 
+ 
+==> [INFO] | 2018-10-23 09:01:29 | End while! 
+ 
+==> [INFO] | 2018-10-23 09:01:29 | ProductSyncNew Success 
+ 
+==> [INFO] | 2018-10-23 09:03:51 | Mã token:bearer NFrHwnVTR5xEOT7vLX2Ks75_fJzhdnhgpmWj4PiFytwvcftTAoVBE9KK-O1yslf0m4zNnSxTpTA8OakZXSMipNBCgNvq9ZUg45X2JcNvBTgWRlzVEx1HxDxapE6-WSRw_7fvIbtat3Xl7fbs8Ffv5oGa8X9dzqVKV-5bLxiS4Sv7GzFBkHCVK3ZRi1xExTWTy_EkAyK-wEPNnaTJfnsBZTu0NYcBV6ombdhWf0wQXce44oKzK6yV_4qHgYayV9xtDZuG74odD_UmKOwv5KhHe5LMzoGyduS5js-80-S3859CsT9lkxdB-ZKn4bTLvE-xQrHwRRdGGKQyj4APmhMpoA 
+ 
+==> [INFO] | 2018-10-23 09:04:00 | Data after serilze WarehousesId:{"WarehouseIds":"2081","PageIndex":1,"PageSize":100} 
+ 
+==> [ERROR] | 2018-10-23 09:17:01 | System.InvalidOperationException: An invalid request URI was provided. The request URI must either be an absolute URI or BaseAddress must be set.
+   at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.PostAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.PostAsync(String requestUri, HttpContent content)
+   at LIB.APIExtension.PostKeyValue(Dictionary`2 dictionaryBody, String url) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\APIExtension.cs:line 19
+   at LIB.API.IplAPI.GetBearerTokenToWarehouse(String apiToken) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 45 
+ 
+==> [ERROR] | 2018-10-23 09:17:06 | System.InvalidOperationException: An invalid request URI was provided. The request URI must either be an absolute URI or BaseAddress must be set.
+   at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.PostAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.PostAsync(String requestUri, HttpContent content)
+   at LIB.APIExtension.PostKeyValue(Dictionary`2 dictionaryBody, String url) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\APIExtension.cs:line 19
+   at LIB.API.IplAPI.GetBearerTokenToWarehouse(String apiToken) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 45 
+ 
+==> [ERROR] | 2018-10-23 09:22:51 | System.InvalidOperationException: An invalid request URI was provided. The request URI must either be an absolute URI or BaseAddress must be set.
+   at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.PostAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.PostAsync(String requestUri, HttpContent content)
+   at LIB.APIExtension.PostKeyValue(Dictionary`2 dictionaryBody, String url) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\APIExtension.cs:line 19
+   at LIB.API.IplAPI.GetBearerTokenToWarehouse(String apiToken) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 45 
+ 
+==> [ERROR] | 2018-10-23 09:32:11 | System.InvalidOperationException: An invalid request URI was provided. The request URI must either be an absolute URI or BaseAddress must be set.
+   at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.PostAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.PostAsync(String requestUri, HttpContent content)
+   at LIB.APIExtension.PostKeyValue(Dictionary`2 dictionaryBody, String url) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\APIExtension.cs:line 19
+   at LIB.API.IplAPI.GetBearerTokenToWarehouse(String apiToken) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 45 
+ 
+==> [ERROR] | 2018-10-23 09:32:18 | System.InvalidOperationException: An invalid request URI was provided. The request URI must either be an absolute URI or BaseAddress must be set.
+   at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.PostAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.PostAsync(String requestUri, HttpContent content)
+   at LIB.APIExtension.PostKeyValue(Dictionary`2 dictionaryBody, String url) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\APIExtension.cs:line 19
+   at LIB.API.IplAPI.GetBearerTokenToWarehouse(String apiToken) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 45 
+ 
+==> [INFO] | 2018-10-23 09:40:48 | Mã token:bearer 1_hu_oPJaYEIueE_BRDgTeb50oC_5Tmji5BgM88KoL43tTsFNOYJuOJuPhDR11NDXkMtPcU34Sa3q0YsdchRJqp-5sNLklWI4y-QTxCq1a9qoh5OYT8RTwL_qfDOI5tSYrYoZo_cN_0_d12udgf5ja2OHSNlu5mfiTztke5Uc2NGpZlRwltoJOFsKOH8JNjmhit5O_3mFfVuBQ2WyF90kYKOFgLaEeGl6uSzuS0Nj3JRuV1Hkp6ViM1xC2a6nWirwDMNtmS8Tie5Uqntm3lSDYnDvRI7lUJ3KzWMhD5bXBXFJOt05j9Y0B9cxtK99f0YuQI7WEDCkxod07qX8PnlYw 
+ 
+==> [INFO] | 2018-10-23 09:42:06 | Data after serilze WarehousesId:{"WarehouseIds":"78","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-23 09:49:06 | Mã token:bearer 0JRMFYK6nzXeqzii7RCceqsXIeGkCHv7rmFnSM3UhRUYK2LVzaF-tMnTaFNiPjBv7Mk8rSI8esEH7R2SEvC_B2gencXuqe4XO0daTj419Sm3gueJyadtD9W8U5yifEBl59PH69sy6nHVrv-tgl0V3bsZl5VZs1zfpRj9bZjAZB54vNOMtUrsjrKpGvjMt6SrOsfZLh6Cl5tAYYg6iVJg7GFM9PH2qiR3u1CXPFUCZoa_JSIJiC2vU_IXcyeegvCsptY7bhbiILRxXJ_c8MUX3J2x9AbS-ckmYA6nsLX76YDAOvXhtZW-xQ67dW5l13tzAGZ_1EZN15R_ol2x2lP0yQ 
+ 
+==> [INFO] | 2018-10-23 09:49:25 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-23 09:50:36 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-23 09:50:42 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-23 09:50:49 | Get Product success 
+ 
+==> [INFO] | 2018-10-23 09:52:05 | End while! 
+ 
+==> [INFO] | 2018-10-23 09:52:16 | ProductSyncNew Success 
+ 
+==> [ERROR] | 2018-10-23 09:56:56 | System.Web.HttpException (0x80004005): The controller for path '/__browserLink/requestData/83760cd0ae494d0798ca34783f041170' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously) 
+ 
+==> [ERROR] | 2018-10-23 09:58:25 | System.Web.HttpException (0x80004005): The controller for path '/__browserLink/requestData/0d8f61f4483743d39d7bc05f6288950d' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously) 
+ 
+==> [INFO] | 2018-10-23 13:43:31 | Mã token:bearer ZEO4URzxlLA01PWIepUQ_KXSpGC67FMI0LbBIANtPP5fT02IcSlSsVSvCVN6v7pVmhbyLyIZxiG7Ek0KAIOAjZyXImYdtX9TMvkvkpvG7O5tWJ0LRyqRij02bpjhTyy_HHfSYpoz7OWHZxqcCgmBwkXmVDFvflXTtmgh9ADTeBrm_UzztM6nX9osQDcBADcOE_t8DXXK9WGw0Dez4DBvXCHjkajFpHWywy5AA_vdVFSPPpJcJ7_uYBpvN91p0EnVVnyqN32sCDzv4qAhKfx7sdknA01HyfUvaKvP3K0jQwNoGiPswae-jg26hyVLZ6a95joJLk70AEu-36oTZEE_rg 
+ 
+==> [INFO] | 2018-10-23 13:43:58 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-23 13:44:24 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-23 13:44:34 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-23 14:01:18 | Mã token:bearer C_SzuhklYA3ivhSfi9uRKiss8AYmXh8EAQnRmjyHcPe2Y6Ki5z0VHeZtp6pZjgvP7rsLmarzaDIqcv5YO4COgOFiXQLZMXdjOEvY7oNzK2Kb_jIFp0JrY7DZB5jko0O_x0z2zcGkV8SD4tC5wdwI175b0s2RrIOq4q4Sv7GxGA2Zfa5K9aSFTlfVbuNtVrb451rJDYOFZ6y9wa8Dovpdf-Ng5_7gcGeM6ikpZk5C9oCmWFjV86welvSw9iamX1cwC6sRFgH1pvc0sySc7XYWP-ONOe7nsMtXAJv-Ofds3soxhhfKQ4e1zCFsJ0szYsjpfNxLnZc9YwK3ADV0LU40Qw 
+ 
+==> [INFO] | 2018-10-23 14:01:18 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-23 14:01:18 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-23 14:01:19 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-23 14:01:19 | Get Product success 
+ 
+==> [INFO] | 2018-10-23 14:01:19 | End while! 
+ 
+==> [INFO] | 2018-10-23 14:01:21 | ProductSyncNew Success 
+ 
+==> [INFO] | 2018-10-23 14:01:48 | Mã token:bearer DNVSWfF45ycVg64M-zltLowi5vxmbVU1lvCRENVF2DX8ASWqireaPbWdTBbmbUFalLEdPlNpHZpO3UnwPctVH0Tl3LuYYLewzBvPcUZCrkzGOaFJHwGBlCyiG2kRxuuz_sTDLUxoGNrawL2fefwC3zuVe2bdgD-hJUcDAWIasdHTEPRe7jUVyb18UELWgxa8zILRk9cvKY2nDe1MR7YoQpHyYT6okHwY8XyDZ6PqaDSuoZAAuKiY5d2mR_Nd_63LrzWnFED0-UrLmge_CGhctZhr4HOJpEUZTyqU2W1SdshWMTJOlqLX3-M2FI_mPQ3HMsFPsPdD6NDYFaeoNzvxEQ 
+ 
+==> [INFO] | 2018-10-23 14:01:51 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-23 14:01:57 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-23 14:02:03 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-23 14:04:39 | Get Product success 
+ 
+==> [INFO] | 2018-10-23 14:04:39 | End while! 
+ 
+==> [INFO] | 2018-10-23 14:04:39 | ProductSyncNew Success 
+ 
+==> [INFO] | 2018-10-23 14:04:53 | Mã token:bearer 1WA3i6IQ6n9wOVU0XZOIwgUy2LK9O2Wm3mrK6-bRiySo5_nScaEN1L9vCWZyc3tycWDKTtUsI5duEbKtrPL4bFgq2engbgV8MkpLeNBnrODvscGKePnBZYNrjyGPQw1Dz8qtJEx2_EA_Mn6mCXza3t9vU_ww84G82EbBSx1kt-n0MjKL-7wumqitC0g7UAq2q24tBVp1K26cahTAj5joYJODDrU0d5Om6oCBIkQcYtc89XLWn2Huqb-XGCtjaXNntCZi-4JedycDb7rb2p6tNTmiQb0eh57wMWzyCALPUM-trBZTXnL2Wtg2-LxOi3r-G-AmdvKqMacbZCoIc3LcFQ 
+ 
+==> [INFO] | 2018-10-23 14:04:59 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-23 14:05:11 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-23 14:05:17 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-23 14:18:50 | Get Product success 
+ 
+==> [INFO] | 2018-10-23 14:18:50 | End while! 
+ 
+==> [INFO] | 2018-10-23 14:18:50 | ProductSyncNew Success 
+ 
+==> [INFO] | 2018-10-23 14:18:59 | Mã token:bearer yWAb_2h57vYHDvfGiTgIWJjIu8C7SNCBHG8GnILU6SpJunZrFhY2nzWdaqw1TwWzdhxVvM9SoF-7kBcPD4bGrVk3rjr9_Xz7LAuo0i_eRrSobG0WKHT9hWg8Gmd45KG3VoJl5G9DhZKELtFRPTbi3hGA03HRCGb5jgBpuBtAi_YDoTtme5ZfVeqG256ZpIjy5s4ZXjERbyL9tyr4ypFpgKpr6rk75dLnbL5xGC2kz-LRATYp4nSBUPn7kfAMSB23725ubD9RYE7GskrrjpK0AIKNlYXTot9Yn91e19mcoxzNPRCd12TaSYF9lHhsx_dsS92xLirz_gaMoqKunlwnhw 
+ 
+==> [INFO] | 2018-10-23 14:18:59 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-23 14:18:59 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-23 14:18:59 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-23 14:18:59 | Get Product success 
+ 
+==> [INFO] | 2018-10-23 14:18:59 | End while! 
+ 
+==> [INFO] | 2018-10-23 14:19:11 | Mã token:bearer YDUtZ_ZMxdEHHsYGd-PZ-ziFLK4OcawKwAzS9sPxiOkdfgG-m42FL6jNNSHgRNZBJjguKxFEuRRzc3mJyutWWDGkevdmuwmZmSQVmTgh-XWqGqqNpki7jvR8-kbgFVFgO9wDcGGgYduNe0zgeqEJxbIt8nO3knRpbCNE_I0U_q4BDvVFLRBoOQdt7hVi6-zizdMOkVPO-dz8EPEdMHrO3jVADqiXtSphrVgbzvUZZnDmcgKu0e2xPkPm9LfKTaaZMXRvtwMLplzEtZi6ibCNNN7CKPrEswG9Xv_gf6fpsexpK8bO4gwhR0GE6VBuZlcE195GCYGF1rubMNplnLKJKA 
+ 
+==> [INFO] | 2018-10-23 14:19:17 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-23 14:19:25 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-23 14:19:34 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-23 14:28:19 | Mã token:bearer 3Q9vNGqlqBDv9QMNAQBpAO95yiKbWlyg-feUsojuRiqtYrt8uPrWiqS9gkip99h9kPpOY-kE8LuMCn-8rcZzYfuBN-5L7ztGfP-lcMZi1LQnx3T9rNfWaY1MN5K0tvzUKINoBbktXjEp5THQ9jx6GwYqoLbmhdqRfVinnjXIYg-1MH3SKyNgRGEmNBwF5Gxsn6234PernHpI8iPXh74_W4ge5DhcP9A1HatIQETOEwxX7Kup0RQMMA4BLS641fz_0g5Nk59i_4F7FPppIhl9jghV9zVllYX-0nA4DmxrRgD7wZaxlLm0QlgR-rRNbXz5YqqWFhY4X1lAMldD8Flj8A 
+ 
+==> [INFO] | 2018-10-23 14:28:28 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-23 14:28:47 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-23 14:28:50 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-23 14:29:16 | Get Product success 
+ 
+==> [INFO] | 2018-10-23 14:29:16 | End while! 
+ 
+==> [INFO] | 2018-10-23 14:29:16 | ProductSyncNew Success 
+ 
+==> [INFO] | 2018-10-23 14:32:45 | Mã token:bearer H4yjNMIG96b5uvNxBZcNInjneVMhBpmTdzz6DMcl9PKkUs01Zn1S_9YBvmU14j1fJVFTtyH3hG8y6-xSza2spsHD0Buvte6TDh43ns5rCBriY_8sRG8YwZBABcMzpLxTHQJl1KkJ9hhFo1hz9w7EtmFpGhq57PXvfn5kNcji5sbdoKLSOQlBq_dIaeG2W6ftd8zUht12BoNR-on2NuAN13ZRpZ2qc40M4JF5nZm3IjTg-7otds6coq4-uM4rYztKIDl0PYFXZIalD_mHPA-vKepa-oARION1LPcmiVaDGJHPNvq-zpdtMIFP1CzZiVgjYQYDkLzlHL_FMZWR5h15iQ 
+ 
+==> [INFO] | 2018-10-23 14:32:45 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-23 14:32:45 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-23 14:32:45 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-23 14:32:45 | Get Product success 
+ 
+==> [INFO] | 2018-10-23 14:32:45 | End while! 
+ 
+==> [INFO] | 2018-10-23 14:32:45 | ProductSyncNew Success 
+ 
+==> [INFO] | 2018-10-23 14:33:39 | Mã token:bearer FhcaJ5intax5UFK9TamCKW3yCDCXTm2VVv6Pt-ltIJzNtKM_tRftCo1jSmcJaPc19Lz9We7qnLAbh5usspktH9vYaJn0LQTEuTk782su2txeH-Ko3hT7kb81lbO75yWzNO2e64wPAuMgHHCevnMsLabG0qIrhvGSRUqhwl5nuhEHAlmtCKP-5SOaiWk13No-4_O9n3hOZ3Y_mNioWTE1Y1pEO9-_wDWKqGchQ_uDhgdH3QSnaYBlT8x3SDtrzcz0t_hsURIZ66oJ8TRmkanVOatYdnz1p_1lnf6KVsyf0phUIlAw0cZW8XhtkVtAOXYWJYtq5iBRApkpJMNz6oqi4A 
+ 
+==> [INFO] | 2018-10-23 14:33:39 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-23 14:33:39 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-23 14:33:39 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-23 14:33:39 | Get Product success 
+ 
+==> [INFO] | 2018-10-23 14:33:39 | End while! 
+ 
+==> [INFO] | 2018-10-23 14:33:39 | ProductSyncNew Success 
+ 
+==> [INFO] | 2018-10-23 14:40:41 | Mã token:bearer 2jV5nEvmJ4r1qH_WpP-cW28_fmIBvuvQ5z5hmV3h3HEBc0Z2kfCZD88ZoEjkpey6gmzR17bCaXJ7LE0FJvMQ3zAej0EnS9Qlx6cN4lyEe72wFHgaTKTA54U3uWdJjsSA3ovAQtr4EATO-ARXRZIhRClYL-tlsvkEhL1A8PrbryRfuKvDSA2BwZ0m44nv8Iak9rSBs8C3_DfJd-uy97BZEyLnDQqb7LaX-JH9hVXdnweHbvbRfVJv9BPTOYyUPVqKY6CV3fO038KE3FiGgn4KxYITFfHUHIzlDNdm16T7ahUBL4tQyfPiOStAB1-bSiMz8ZqXq-29CEMUlI4UXcdRgw 
+ 
+==> [INFO] | 2018-10-23 14:40:41 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-23 14:40:42 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-23 14:40:42 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-23 14:40:42 | Get Product success 
+ 
+==> [INFO] | 2018-10-23 14:40:42 | End while! 
+ 
+==> [INFO] | 2018-10-23 14:40:42 | ProductSyncNew Success 
+ 
+==> [INFO] | 2018-10-23 15:08:47 | ===============Start Sync Orders! ==================== 
+ 
+==> [INFO] | 2018-10-23 15:08:50 | API:http://localhost:5455/token 
+ 
+==> [INFO] | 2018-10-23 15:08:54 | Mã token:bearer _MAQxTv-nct7wWTMoKZdbwvRMdIy_p00J7GxWZjpJua-e678FiLI8aIxrGXX6ONz_0usJvLxYPzwgCAf81vE5an8a0DpNsX8u8l1n_PpQr2yiloIffwo2c51Mw-M8et0rDOdQo8HpKh3vw1U076Tc9aocKV2R19i-X-b3rTRXmdpyUP3pv5ye4Je8z1kGBTzYtdTZgUlkoGli1GSGOR-MnkmLG8mXeMI4GPrpuIg-bGruWNFYVy_8d3W0sepp2m4qgoWSlj0xdnYJzK6b7PMbVgpVmMsqmi-2_PXnOmeqfh06LYM1d7WyYggKdGwjOt60ZViho_gFpZJvM9KcBa8tA 
+ 
+==> [INFO] | 2018-10-23 15:09:04 | Get order submit:<OrderPost><OrderShops><OrderShop><OrderResource>MT000000002</OrderResource><WarehouseCode>MT</WarehouseCode><TotalPrice>1400000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4972233252260</Barcode><ProductCode>3D27254030K0</ProductCode><Quantity>10</Quantity><Price>140000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>1400000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop><OrderShop><OrderResource>MT000000001</OrderResource><WarehouseCode>MT</WarehouseCode><TotalPrice>1400000.00</TotalPrice><TypeOrder>0</TypeOrder><OrderItems><OrderItem><Barcode>4972233252260</Barcode><ProductCode>3D27254030K0</ProductCode><Quantity>10</Quantity><Price>140000.00</Price><Discount>0.000000</Discount><PercentDiscount>0.00</PercentDiscount><TotalPrice>1400000.000000</TotalPrice><Type>Sell</Type></OrderItem></OrderItems></OrderShop></OrderShops></OrderPost> 
+ 
+==> [INFO] | 2018-10-23 15:09:08 | Data after convert xml -> json:{"OrderShops":[{"OrderResource":"MT000000002","Description":null,"WarehouseCode":"MT","Note":null,"TotalPrice":1400000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4972233252260","ProductCode":"3D27254030K0","Quantity":10,"Price":140000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":1400000.0}]},{"OrderResource":"MT000000001","Description":null,"WarehouseCode":"MT","Note":null,"TotalPrice":1400000.0,"TypeOrder":"0","OrderItems":[{"Barcode":"4972233252260","ProductCode":"3D27254030K0","Quantity":10,"Price":140000.0,"Type":"Sell","Discount":0.0,"PercentDiscount":0.0,"TotalPrice":1400000.0}]}]} 
+ 
+==> [ERROR] | 2018-10-23 15:11:05 | System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at LIB.API.IplAPI.<API_Warehouses_SyncDataProduct>d__2.MoveNext() in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 212
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+ 
+ 
+==> [ERROR] | 2018-10-23 15:22:34 | System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at LIB.APIExtension.PostKeyValue(Dictionary`2 dictionaryBody, String url) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\APIExtension.cs:line 19
+   at LIB.API.IplAPI.GetBearerTokenToWarehouse(String apiToken) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\API\IplAPI.cs:line 45
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+ 
+ 

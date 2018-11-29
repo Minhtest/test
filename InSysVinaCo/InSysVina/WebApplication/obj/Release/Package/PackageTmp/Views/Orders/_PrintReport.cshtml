@@ -1,0 +1,81 @@
+﻿@using LIB.Warehouses
+@using System.Configuration
+@model List<LIB.Orders.OrderReportModel>
+@{
+    var warehouse = ViewBag.warehouse as WarehousesEntity;
+}
+<style>
+    .tbl-sum tr td {
+        font-family: Arial;
+        font-size: 10px;
+    }
+</style>
+<div>
+
+    <table style="width:100%;margin-bottom:10px;">
+        <tr>
+            <td>
+                @if (warehouse.Logo != null && warehouse.Logo != "")
+                {
+                    <img src="@ConfigurationManager.AppSettings["UrlServer"]/@warehouse.Logo" style="margin:auto;display:block;max-height:50px;width:auto" />
+                }
+        </td>
+        @if (ViewBag.opType == 0)
+        {
+            <td style="text-align:center;font-family:Arial; font-size:10px;">Báo cáo hóa đơn <br /> Ngày @ViewBag.TimeStart </td>
+        }
+        else
+        {
+            <td style="text-align:center;font-family:Arial; font-size:10px;">Báo cáo hóa đơn <br /> Từ @ViewBag.TimeStart <br /> đến @ViewBag.TimeEnd</td>
+        }
+        <td style="text-align:center;font-family:Arial; font-size:10px;">@warehouse.Name <br />@warehouse.Address<br />@warehouse.Phone</td>
+    </tr>
+</table>
+<div style="width:100%; border: 0.5px dashed #73879C;"></div>
+<div class="tbl-sum">
+    <table>
+        <tr>
+            <td>Tổng thu bằng thẻ:</td>
+            <td>@ViewBag.SumPayCard</td>
+        </tr>
+        <tr>
+            <td>Tổng thu tiền mặt:</td>
+            <td>@ViewBag.SumPayCash</td>
+        </tr>
+        <tr>
+            <td>Tổng tiền trả khách:</td>
+            <td>@ViewBag.Refund</td>
+        </tr>
+
+        <tr>
+            <td>Tổng tiền trả hàng:</td>
+            <td>@ViewBag.SumReturn</td>
+        </tr>
+        <tr>
+            <td>Tổng thu:</td>
+            <td>@ViewBag.SumMoney</td>
+        </tr>
+    </table>
+</div>
+<table style="width:100%;">
+    <thead>
+        <tr>
+            <th style="font-family:Arial; font-size:10px;">Mã HĐ</th>
+            <th style="font-family:Arial; font-size:10px;">Thời gian</th>
+            <th style="font-family:Arial; font-size:10px;">T.Tiền</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var it in Model)
+        {
+            <tr>
+                <td style="font-family:Arial; font-size:10px;">@it.OrderCode</td>
+                <td style="font-family:Arial; font-size:10px;">@String.Format("{0:dd/MM/yyyy HH:mm}", @it.OrderDateTime)</td>
+                <td style="font-family:Arial; font-size:10px;" txtMoneyMore>@it.GrandTotal</td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+</div>

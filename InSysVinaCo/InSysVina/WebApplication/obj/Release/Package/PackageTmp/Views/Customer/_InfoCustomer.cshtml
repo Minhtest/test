@@ -1,0 +1,43 @@
+﻿@model LIB.CustomerEntity
+<table class="table table-responsive table-hover table-bordered">
+    <tbody>
+        @if (Model.Id == null)
+        {
+            <tr>
+                <td>Khách hàng</td>
+                <th>Vãng Lai</th>
+            </tr>
+        }
+        else
+        {
+            <tr>
+                <td>Khách hàng</td>
+                <th>@Model.Name</th>
+            </tr>
+            <tr>
+                <td>Mã Khách Hàng</td>
+                <th>@Model.CustomerCode</th>
+            </tr>
+            <tr>
+                <td>Mã Thẻ</td>
+                <th>@Html.Raw(Model.CardNumberId ?? "<span style='color:red'>Chưa tạo thẻ</span>")<input id="ipCardNumber" value="@Model.CardNumberId" hidden="hidden" /></th>
+            </tr>
+            <tr>
+                <td>Điện Thoại</td>
+                <th>@Model.Phone</th>
+            </tr>
+            <tr>
+                <td>Địa Chỉ</td>
+                <th>@Model.Address</th>
+            </tr>
+            if (Model.CardNumberId != null)
+            {
+                <tr>
+                    <td>Điểm</td>
+                    <th><i txtNumber>@Model.Point điểm</i> = <i txtMoney>@Model.MoneyAllPoint</i> VND<input id="maxpoint" value="@Model.Point" hidden="hidden" /></th>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+

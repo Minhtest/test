@@ -1,0 +1,294 @@
+==> [INFO] | 2018-10-26 14:46:14 | Mã token:bearer l5IU1-0MXbtD2ltXgpckg7-1kYmFLLypnOS0NRhaJwuPfa-cGFM2y29Wn45TAwtb-rIRFdJpJuP7QkE76SeHBvRQJUy3irInFkfWhNQMNuQOArBC6L3toP-NmtEXyWtvcUISYBOfWXVuqdAqV84WdlKgM4SbPl7BjBDMK4nvz210M-BpQbvsXMxuxEYgQbG1K6MFXowefCZvE5pe0I2fsZH-9EsTQwz4Cw2seT6npu2sWyp8bBVTMwylKWD9J2LYM9KJLKT6BtUedGw4wqVodoqCwXvOPWC12ncFATOlZjPd9IvycG82V81ZB27LFi9_dEbCVRPqLehIF4X8QfaJJw 
+ 
+==> [INFO] | 2018-10-26 14:46:20 | Data after serilze WarehousesId:{"WarehouseIds":"1034","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-26 14:47:28 | Data after serilze WarehousesId:{"WarehouseIds":"1034","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-26 14:48:50 | Data receive between 0 -> 100 | Total Row: 0 
+ 
+==> [INFO] | 2018-10-26 14:48:50 | End while! 
+ 
+==> [INFO] | 2018-10-26 14:48:50 | ProductSyncNew Success 
+ 
+==> [INFO] | 2018-10-26 14:49:20 | Mã token:bearer BTF8Jn19WaDkOcyZqMteoFPTPvrKtMiOjtfMGRQfZc5mxXRE71GC6KRvSgtKuogJnQRi4UFF4EsBelEe6ItmTGWssM18cWnI3pbdqMlAstRly9iHkGvFHxL8Yo087UdAsFcWQF_bE8HD8Hj4B6OWUff4ZldTnFjpMgcRz-VABXRJWkSBrfknZyC6K5bbYBiJ6JF1SWOw3lQZ4q-KzbMRO09fHNSwqK3l31f2Hhu2ypXfJhNmCQJqG2Fa2OIkfGXWVwpzjNSGHS3Rvt0OKnqA-vm2XtgOdSMRg-acYyjuM--CJH6UALD-KAEDLB6lKb4y9fMfM1f8YNI4rVwSx029vsqf1tJWbegxnbyVpcvgvvw 
+ 
+==> [INFO] | 2018-10-26 14:49:20 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-26 14:50:16 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-26 14:50:16 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":190,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-26 14:50:18 | Get Product success 
+ 
+==> [INFO] | 2018-10-26 14:50:18 | End while! 
+ 
+==> [INFO] | 2018-10-26 14:50:50 | ProductSyncNew Success 
+ 
+==> [INFO] | 2018-10-26 14:51:42 | Mã token:bearer dafwbdJdab7NdbDbMu2lZsbv7QNietfUK-2Z3f7NdfAsGYG9sMgvFC3ND3AkWOYWUCq_V5k8jk2kKaJZF_fEtZuZqeWhw7Bsr13DK2TZgYvObf1aq2DfNcuaekPjiyDzDEPU7dTnrkkj6pO_waPmhbyzQ04PGluUFGY07iQ20a0okR8-6VxsXcAHfyTLqzCwbgeFqTfdMBTfN7hhp6ilFFDAgbXiAjlGT21dgK-wy2uwr1x_Y6SuMEGVY7vsbXZaZ_DismO3iFMCjRsxkpt3Y49Qe0drVyuI5-MDF0vpBK2YaviwgIa_eSQXch_FppLtF44mwZZYWvMa9TlKfx4VC9NRMxvE0Lsw2td41lqtPmA 
+ 
+==> [INFO] | 2018-10-26 14:51:50 | Data after serilze WarehousesId:{"WarehouseIds":"2084","PageIndex":1,"PageSize":100} 
+ 
+==> [INFO] | 2018-10-26 14:52:36 | Data receive between 0 -> 100 | Total Row: 28 
+ 
+==> [INFO] | 2018-10-26 14:52:42 | Data receive from post api:{"status":true,"data":[{"barcode":"4972233252273","productCode":"085TN129ST2N","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-07T00:00:00","productName":"B?m móng hi?u Nail Clipper S - h?ng","computeUnit":"Chi?c","sellPrice":146000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252278","productCode":"0E2Z35O98511","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-12T00:00:00","productName":"B?m móng NC-132","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252272","productCode":"0GE568NCY0DZ","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-06T00:00:00","productName":"B?m móng hi?u Catcher L","computeUnit":"Chi?c","sellPrice":167000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252262","productCode":"0PX6558O2N78","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-11T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong fresh mint 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252269","productCode":"0W81098E54RT","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-03T00:00:00","productName":"B?m móng cao c?p HC1843","computeUnit":"Chi?c","sellPrice":574000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252270","productCode":"1PN64R49B405","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-04T00:00:00","productName":"B?m móng hi?u Catcher S","computeUnit":"Chi?c","sellPrice":147000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252261","productCode":"253998NM4R1Z","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-10T00:00:00","productName":"Nu?c súc mi?ng OralSplash huong b?c hà 500ml","computeUnit":"Chai","sellPrice":110000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252265","productCode":"2J43H24TMNQW","productCategory":"2b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-14T00:00:00","productName":"Kem dánh rang b?c hà t? nhiên Denter ClearMax 140g( s?n ph?m không ph?i là thu?c)","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252282","productCode":"2T0ZORM40321","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-16T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252277","productCode":"3A0Z93DCB676","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-11T00:00:00","productName":"B?m móng tay d?u xiên NC-130","computeUnit":"Chi?c","sellPrice":319000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252260","productCode":"3D27254030K0","productCategory":"1","quantity":190,"warehouseId":2084,"expiredDate":"2020-08-09T00:00:00","productName":"Nu?c súc mi?ng OralSplash 500ml không có ch?a c?n ","computeUnit":"Chai","sellPrice":140000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252266","productCode":"53H5G20JKVDW","productCategory":"1","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-15T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dua 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252281","productCode":"5DST8H18UHO3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-15T00:00:00","productName":"B?m móng tay màu xanh Nail Clipper S","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252274","productCode":"70BJ431508XI","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-08T00:00:00","productName":"B?m móng màu xanh duong Nail Clipper S NC-121","computeUnit":"Chi?c","sellPrice":153000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252268","productCode":"8KW152436I70","productCategory":"1b","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-17T00:00:00","productName":"Kem dánh rang Etiquette 40g","computeUnit":"Chai","sellPrice":42000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252264","productCode":"B3M7I86N5T19","productCategory":"2a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-13T00:00:00","productName":"Kem dánh ranng Denter Clear max  - huong b?c hà xanh l?c 140g  ","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252275","productCode":"D45RYH3040G3","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-09T00:00:00","productName":"B?m móng tay màu h?ng Nail Clipper M NC-122","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252267","productCode":"EF8H1890M2B6","productCategory":"1a","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-16T00:00:00","productName":"Kem dánh rang tr? em Anpanman huong dâu 40g","computeUnit":"Chai","sellPrice":65000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252263","productCode":"GU0BT7TL0293","productCategory":"2","quantity":200,"warehouseId":2084,"expiredDate":"2020-08-12T00:00:00","productName":"Kem dánh rang Super Cool Denter ClearMax  140g","computeUnit":"Chai","sellPrice":70000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252280","productCode":"H185JX28DO3G","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-14T00:00:00","productName":"B?m móng tay lo?i nh? màu h?ng NC-133","computeUnit":"Chi?c","sellPrice":165000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252283","productCode":"H26F6EC61P88","productCategory":"2b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-17T00:00:00","productName":"B?m móng hi?u Nail Clipper M - Blue","computeUnit":"Chi?c","sellPrice":182000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252287","productCode":"I96VT1523H65","productCategory":"2","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-21T00:00:00","productName":"Kéo c?t móng cho bé","computeUnit":"Chi?c","sellPrice":247000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252271","productCode":"J1I7M8835G39","productCategory":"2b","quantity":20,"warehouseId":2084,"expiredDate":"2019-03-05T00:00:00","productName":"B?m móng hi?u Catcher M","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252284","productCode":"OI728PT3Y609","productCategory":"1","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-18T00:00:00","productName":"B?m móng IIH1","computeUnit":"Chi?c","sellPrice":135000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252286","productCode":"R5D16Q1ETOXK","productCategory":"1b","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-20T00:00:00","productName":"B?m móng tay IIH3","computeUnit":"Chi?c","sellPrice":283000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252279","productCode":"S32598N5Q1B0","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-13T00:00:00","productName":"Ki?m c?t móng chân lu?i ph?ng","computeUnit":"Chi?c","sellPrice":359000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252285","productCode":"T73H923QNGV5","productCategory":"1a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-19T00:00:00","productName":"B?m móng IIH2","computeUnit":"Chi?c","sellPrice":154000.00,"mainImage":null,"image":null,"description":null},{"barcode":"4972233252276","productCode":"U9H3GDIQ6GP2","productCategory":"2a","quantity":100,"warehouseId":2084,"expiredDate":"2019-03-10T00:00:00","productName":"B?m móng tay màu xanh NC-123 M","computeUnit":"Chi?c","sellPrice":173000.00,"mainImage":null,"image":null,"description":null}],"totalRows":28,"message":"Successfully!"} 
+ 
+==> [INFO] | 2018-10-26 14:55:18 | Get Product success 
+ 
+==> [INFO] | 2018-10-26 14:55:18 | End while! 
+ 
+==> [INFO] | 2018-10-26 14:55:18 | ProductSyncNew Success 
+ 
+==> [ERROR] | 2018-10-26 15:20:32 | System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '='.
+Incorrect syntax near ','.
+Incorrect syntax near the keyword 'AS'.
+Incorrect syntax near '='.
+Incorrect syntax near ','.
+Incorrect syntax near the keyword 'AS'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 322
+   at LIB.Product.IplProduct.GetDataProduct(bootstrapTableParam obj, Nullable`1 WarehouseId, Int32& totalRecord) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Product\IplProduct.cs:line 26
+ClientConnectionId:3a77093b-c725-49d4-8b30-153ddedec425
+Error Number:102,State:1,Class:15 
+ 
+==> [ERROR] | 2018-10-26 15:20:32 | System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.All[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApplication.Controllers.ProductsController.GetDataProducts(bootstrapTableParam obj, Nullable`1 WarehouseId) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\Controllers\ProductsController.cs:line 189 
+ 
+==> [ERROR] | 2018-10-26 15:39:13 | System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '='.
+Incorrect syntax near ','.
+Incorrect syntax near the keyword 'AS'.
+Incorrect syntax near '='.
+Incorrect syntax near ','.
+Incorrect syntax near the keyword 'AS'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 322
+   at LIB.Product.IplProduct.GetDataProduct(bootstrapTableParam obj, Nullable`1 WarehouseId, Int32& totalRecord) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Product\IplProduct.cs:line 26
+ClientConnectionId:56e3fa0a-d1d2-4bdb-8228-02e57e8b51be
+Error Number:102,State:1,Class:15 
+ 
+==> [ERROR] | 2018-10-26 15:39:13 | System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.All[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApplication.Controllers.ProductsController.GetDataProducts(bootstrapTableParam obj, Nullable`1 WarehouseId) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\Controllers\ProductsController.cs:line 189 
+ 
+==> [ERROR] | 2018-10-26 15:40:11 | System.Web.HttpException (0x80004005): The controller for path '/__browserLink/requestData/ea616e483e4f4e22b01337323a4c3081' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously) 
+ 
+==> [ERROR] | 2018-10-26 15:40:16 | System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '='.
+Incorrect syntax near ','.
+Incorrect syntax near the keyword 'AS'.
+Incorrect syntax near '='.
+Incorrect syntax near ','.
+Incorrect syntax near the keyword 'AS'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 322
+   at LIB.Product.IplProduct.GetDataProduct(bootstrapTableParam obj, Nullable`1 WarehouseId, Int32& totalRecord) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Product\IplProduct.cs:line 26
+ClientConnectionId:0c67378d-e269-426a-8ce3-02fc67af4703
+Error Number:102,State:1,Class:15 
+ 
+==> [ERROR] | 2018-10-26 15:40:16 | System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.All[TSource](IEnumerable`1 source, Func`2 predicate)
+   at WebApplication.Controllers.ProductsController.GetDataProducts(bootstrapTableParam obj, Nullable`1 WarehouseId) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\Controllers\ProductsController.cs:line 189 
+ 
+==> [ERROR] | 2018-10-26 16:18:41 | System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - An existing connection was forcibly closed by the remote host.) ---> System.ComponentModel.Win32Exception (0x80004005): An existing connection was forcibly closed by the remote host
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Framework.Data.ADOProvider.Procedure[T](String procedure, Object oParams, Boolean useCache) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\Framework\Framework\Data\ADOProvider.cs:line 322
+   at LIB.IplCategory.GetAllWithLevel(String txtSearch) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\LIB\Category\IplCategory.cs:line 21
+ClientConnectionId:8ddc4eb1-e812-4511-bd76-87dc6dae4941
+Error Number:10054,State:0,Class:20 
+ 
+==> [ERROR] | 2018-10-26 16:18:50 | System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication.Helpers.Tree.getChildList(List`1 data, Nullable`1 IdParent)
+   at WebApplication.Controllers.ProductsController.Create()
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously) 
+ 
+==> [ERROR] | 2018-10-26 16:36:36 | System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication.Controllers.WarehousesController.CheckSyncWarehouse(Int32 warehouseid) in C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\Controllers\WarehousesController.cs:line 95
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously) 
+ 
+==> [ERROR] | 2018-10-26 16:42:41 | System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication.Controllers.WarehousesController.CheckSyncWarehouse(Int32 warehouseid)
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously) 
+ 

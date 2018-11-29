@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Khách Hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section styles_plugins{
+    <link href="~/Content/css/bootstrap-table.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap-datepicker3.min.css" />
+}
+@section scripts_plugins{
+    <script src="~/Content/js/bootstrap-table.min.js"></script>
+    <script src="~/Content/js/bootstrap-table-vi-VN.min.js"></script>
+    <script src="~/Content/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/Content/js/bootstrap-datepicker.vi.min.js"></script>
+}
+@section scripts{
+    <script src="~/Scripts/controller/Customer.js"></script>
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Danh sách Khách Hàng
+    </div>
+    <div class="panel-body">
+        <div id="toolbar">
+            <form class="form-inline">
+                <div class="form-group">
+                    <div class="input-group" style="float:left">
+                        <span class="input-group-btn">
+                            <button type="button" id="btnAddCustomer" class="btn btn-primary" data-toggle="modal" data-target="#createCustomerModal">Thêm Mới</button>
+                            <button type="button" id="btnExportExcelCustomer" class="btn btn-danger">Export Excel</button>
+                            <button class="btn btn-success" type="button" id="btnImportExcel">Import Excel</button>
+                            <input name="fileImportExcel" id="fileImportExcelCustomer" type="file" style="display:none" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+                        </span>
+                    </div>
+                    <a href="@System.Configuration.ConfigurationManager.AppSettings["urlTemplateImportCustomer"]">>>Template</a>
+                </div>
+                <div class="form-group">
+                    <div class="input-group" style="display:inline-block">
+                        <span class="input-group-addon">Lọc ưu tiên</span>
+                        <span class="input-group-btn">
+                            <button type="button" id="btnSortOrderMax" class="btn btn-default">Nhiều hóa đơn</button>
+                            <button type="button" id="btnSortTotalMax" class="btn btn-default">Chi tiêu nhiều</button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <table id="tblCustomer" class="table" data-toolbar="#toolbar"></table>
+    </div>
+</div>
+@Html.Partial("_ImportCustomers", new LIB.CustomerEntity())

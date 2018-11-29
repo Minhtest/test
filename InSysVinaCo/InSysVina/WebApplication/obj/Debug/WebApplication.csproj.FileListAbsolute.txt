@@ -1,0 +1,366 @@
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\roslyn\csc.exe
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\roslyn\vbc.exe
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\roslyn\VBCSCompiler.exe
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\log4net.config
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\WebApplication.dll.config
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\WebApplication.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\WebApplication.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Antlr3.Runtime.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Common.Logging.Core.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Common.Logging.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Dapper.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\DapperExtensions.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\DocumentFormat.OpenXml.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\EntityFramework.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\EPPlus.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Framework.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\LIB.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\LibCore.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\log4net.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Security.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Newtonsoft.Json.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\NPOI.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\NPOI.OOXML.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\NPOI.OpenXml4Net.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\NPOI.OpenXmlFormats.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Owin.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Quartz.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Select.HtmlToPdf.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\System.Web.Helpers.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\System.Web.Mvc.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\System.Web.Optimization.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\System.Web.Razor.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\System.Web.WebPages.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\System.Web.WebPages.Razor.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\WebGrease.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\MongoDB.Driver.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\MongoDB.Bson.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Enyim.Caching.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\BCrypt.Net.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\MiniProfiler.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Nest.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Autofac.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.SqlServer.Smo.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Autofac.Integration.Mvc.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.SqlServer.ConnectionInfo.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.SqlServer.SqlEnum.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Framework.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Framework.dll.config
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\LibCore.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\LibCore.dll.config
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\LIB.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\LIB.dll.config
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Common.Logging.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Common.Logging.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Common.Logging.Core.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Common.Logging.Core.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Dapper.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\DapperExtensions.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\DocumentFormat.OpenXml.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\EPPlus.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\log4net.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\NPOI.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Quartz.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Quartz.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Select.HtmlToPdf.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\System.Web.Helpers.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\System.Web.Mvc.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\System.Web.Optimization.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\System.Web.Razor.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\System.Web.WebPages.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\System.Web.WebPages.Razor.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Antlr3.Runtime.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Newtonsoft.Json.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\EntityFramework.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\EntityFramework.SqlServer.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Security.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\bin\Select.Html.dep
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\obj\Debug\WebApplication.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\WebApplication\obj\Debug\WebApplication.pdb
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\roslyn\csc.exe
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\roslyn\System.Collections.Immutable.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\roslyn\System.Reflection.Metadata.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\roslyn\vbc.exe
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\roslyn\VBCSCompiler.exe
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\roslyn\VBCSCompiler.exe.config
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\log4net.config
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\WebApplication.dll.config
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\WebApplication.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\WebApplication.pdb
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Antlr3.Runtime.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Common.Logging.Core.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Common.Logging.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Dapper.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\DapperExtensions.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\DocumentFormat.OpenXml.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\EntityFramework.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\EntityFramework.SqlServer.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\EPPlus.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Framework.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\ICSharpCode.SharpZipLib.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\LIB.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\LibCore.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\log4net.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Security.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Google.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Web.Infrastructure.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Newtonsoft.Json.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\NPOI.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\NPOI.OOXML.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\NPOI.OpenXml4Net.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\NPOI.OpenXmlFormats.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Owin.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Quartz.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Select.HtmlToPdf.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\System.Web.Helpers.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\System.Web.Mvc.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\System.Web.Optimization.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\System.Web.Razor.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\System.Web.WebPages.Deployment.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\System.Web.WebPages.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\System.Web.WebPages.Razor.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\WebGrease.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\MongoDB.Driver.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\MongoDB.Bson.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Enyim.Caching.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\BCrypt.Net.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\MiniProfiler.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Nest.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Autofac.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.SqlServer.Smo.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Autofac.Integration.Mvc.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.SqlServer.ConnectionInfo.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.SqlServer.SqlEnum.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Framework.pdb
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Framework.dll.config
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\LibCore.pdb
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\LibCore.dll.config
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\LIB.pdb
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\LIB.dll.config
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Common.Logging.pdb
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Common.Logging.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Common.Logging.Core.pdb
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Common.Logging.Core.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Dapper.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\DapperExtensions.pdb
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\DocumentFormat.OpenXml.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\EPPlus.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\log4net.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\NPOI.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Quartz.pdb
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Quartz.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Select.HtmlToPdf.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\System.Web.Helpers.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\System.Web.Mvc.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\System.Web.Optimization.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\System.Web.Razor.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\System.Web.WebPages.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\System.Web.WebPages.Deployment.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\System.Web.WebPages.Razor.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Antlr3.Runtime.pdb
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Newtonsoft.Json.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\EntityFramework.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\EntityFramework.SqlServer.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Security.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Google.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\bin\Select.Html.dep
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\obj\Debug\WebApplication.dll
+D:\Web Định\InSysVinaCo\Shopviet\WebApplication\obj\Debug\WebApplication.pdb
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\roslyn\csc.exe
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\roslyn\System.Collections.Immutable.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\roslyn\System.Reflection.Metadata.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\roslyn\vbc.exe
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\roslyn\VBCSCompiler.exe
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\roslyn\VBCSCompiler.exe.config
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\log4net.config
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\WebApplication.dll.config
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\WebApplication.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\WebApplication.pdb
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Antlr3.Runtime.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Common.Logging.Core.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Common.Logging.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Dapper.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\DapperExtensions.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\DocumentFormat.OpenXml.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\EntityFramework.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\EntityFramework.SqlServer.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\EPPlus.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Framework.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\ICSharpCode.SharpZipLib.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\LIB.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\LibCore.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\log4net.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Security.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Security.Google.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Web.Infrastructure.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Newtonsoft.Json.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\NPOI.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\NPOI.OOXML.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\NPOI.OpenXml4Net.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\NPOI.OpenXmlFormats.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Owin.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Quartz.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Select.HtmlToPdf.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\System.Web.Helpers.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\System.Web.Mvc.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\System.Web.Optimization.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\System.Web.Razor.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\System.Web.WebPages.Deployment.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\System.Web.WebPages.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\System.Web.WebPages.Razor.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\WebGrease.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\MongoDB.Driver.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\MongoDB.Bson.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Enyim.Caching.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\BCrypt.Net.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\MiniProfiler.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Nest.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Autofac.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.SqlServer.Smo.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Autofac.Integration.Mvc.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.SqlServer.ConnectionInfo.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.SqlServer.SqlEnum.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Framework.pdb
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Framework.dll.config
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\LibCore.pdb
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\LibCore.dll.config
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\LIB.pdb
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\LIB.dll.config
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Common.Logging.pdb
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Common.Logging.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Common.Logging.Core.pdb
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Common.Logging.Core.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Dapper.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\DapperExtensions.pdb
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\DocumentFormat.OpenXml.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\EPPlus.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\log4net.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\NPOI.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Quartz.pdb
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Quartz.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Select.HtmlToPdf.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\System.Web.Helpers.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\System.Web.Mvc.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\System.Web.Optimization.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\System.Web.Razor.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\System.Web.WebPages.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\System.Web.WebPages.Deployment.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\System.Web.WebPages.Razor.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Antlr3.Runtime.pdb
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Newtonsoft.Json.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\EntityFramework.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\EntityFramework.SqlServer.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Security.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Security.Google.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\bin\Select.Html.dep
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\obj\Debug\WebApplication.dll
+D:\Web Định\InSysVinaCo\InSysVina\WebApplication\obj\Debug\WebApplication.pdb

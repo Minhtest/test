@@ -1,0 +1,12 @@
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\3Party\Dapper\bin\Debug\Dapper.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\3Party\Dapper\bin\Debug\Dapper.pdb
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\3Party\Dapper\bin\Debug\Enyim.Caching.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\3Party\Dapper\obj\Debug\Dapper.csprojResolveAssemblyReference.cache
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\3Party\Dapper\obj\Debug\Dapper.dll
+C:\Users\MINHNN\Desktop\CODE\SHOPVIET\Shopviet\Framework\3Party\Dapper\obj\Debug\Dapper.pdb
+D:\Web Định\InSysVinaCo\InSysVina\Framework\3Party\Dapper\bin\Debug\Dapper.dll
+D:\Web Định\InSysVinaCo\InSysVina\Framework\3Party\Dapper\bin\Debug\Dapper.pdb
+D:\Web Định\InSysVinaCo\InSysVina\Framework\3Party\Dapper\bin\Debug\Enyim.Caching.dll
+D:\Web Định\InSysVinaCo\InSysVina\Framework\3Party\Dapper\obj\Debug\Dapper.csprojResolveAssemblyReference.cache
+D:\Web Định\InSysVinaCo\InSysVina\Framework\3Party\Dapper\obj\Debug\Dapper.dll
+D:\Web Định\InSysVinaCo\InSysVina\Framework\3Party\Dapper\obj\Debug\Dapper.pdb
