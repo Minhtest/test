@@ -1,0 +1,22 @@
+﻿@using LIB
+@model LIB.CardNumbers.CardNumbersEntity
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title">TẠO THẺ</h4>
+</div>
+<div class="form form-horizontal" id="frmCardNumber">
+    <div class="modal-body">
+
+        <div class="form-group">
+            @Html.LabelFor(t => t.CardNumberId)
+            @Html.TextBoxFor(t => t.CardNumberId, new { @class = "form-control", @Id= "CardNumberId", @required = "" })
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+        <button class="btn btn-success" id="btnSubmit">TẠO MỚI</button>
+    </div>
+</div>
+

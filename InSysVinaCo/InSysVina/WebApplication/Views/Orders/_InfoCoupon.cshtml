@@ -1,0 +1,69 @@
+﻿@model LIB.API.DiscountModel
+@if (Model == null)
+{
+}
+else
+{
+    <table class="table table-responsive table-hover table-bordered">
+        <thead>
+            <tr>
+                <th colspan="2">Thông Tin Mã Giảm Giá</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mã</td>
+                <th>@Model.Code</th>
+            </tr>
+            <tr>
+                <td>Tên chương trình</td>
+                <th>@Model.Name</th>
+            </tr>
+            <tr>
+                <td>Giá trị giảm giá</td>
+                <th>
+                    @if (Model.Type == 1)
+                    {
+                        <span style="color:red">Giảm @Model.Amount VND</span>
+                    }
+                    else
+                    {
+                        <span style="color:red">Giảm @Model.Percentage %</span>
+                    }
+                </th>
+            </tr>
+            @if (Model.StartDate != null)
+            {
+                <tr>
+                    <td>Thời Gian Áp Dụng</td>
+                    <th><span txtDate>@Model.StartDate.Value.ToString("dd/MM/yyyy")</span> - <span txtDate>@Model.EndDate.Value.ToString("dd/MM/yyyy")</span></th>
+                </tr>
+            }
+            <tr>
+                <td>Điều kiện áp dụng</td>
+                <th>@(Model.OrderValueCondition == null ? "không có điều kiện" : "Tổng tiền > " + Model.OrderValueCondition)</th>
+            </tr>
+            <tr>
+                <td>Giảm tối đa</td>
+                <th>
+                    @if (Model.Type == 1 || Model.MaxValue == null)
+                    {
+                        <span>Không giới hạn</span>
+                    }
+                    else
+                    {
+                        <span>@Model.MaxValue VND</span>
+                    }
+                </th>
+            </tr>
+            @if (Model.LimitationTimes != null)
+            {
+                <tr>
+                    <td>Số lần còn lại</td>
+                    <th>@Model.LimitationTimes</th>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+

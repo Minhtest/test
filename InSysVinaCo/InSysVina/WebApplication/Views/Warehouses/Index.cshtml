@@ -1,0 +1,31 @@
+﻿@using WebApplication.Authorize
+@{
+    ViewBag.Title = "Danh sách cửa hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var acc = User as CustomPrincipal;
+}
+@section styles_plugins{
+    <link href="~/Content/css/bootstrap-table.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-editable.css" rel="stylesheet" />
+}
+@section scripts_plugins{
+    <script src="~/Content/js/bootstrap-table.min.js"></script>
+    <script src="~/Content/js/bootstrap-table-vi-VN.min.js"></script>
+    <script src="~/Content/js/bootstrap-editable.min.js"></script>
+    <script src="~/Content/js/bootstrap-table-editable.min.js"></script>
+}
+
+@section scripts{
+    <script src="~/Scripts/controller/Warehouses.js"></script>
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Danh sách cửa hàng
+    </div>
+    <div class="panel-body">
+        <div id="toolbar">
+            <button id="btnSync" class="btn btn-primary">Đồng bộ <i class="fas fa-sync-alt"></i></button>
+        </div>
+        <table id="tableWarehouse"></table>
+    </div>
+</div>

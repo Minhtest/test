@@ -1,0 +1,48 @@
+﻿@model LIB.Warehouses.WarehousesEntity
+<div class="modal fade text-xs-left" id="createWarehouseModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="true" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel1">Tạo mới kho hàng</h4>
+            </div>
+            @using (Html.BeginForm("", "", FormMethod.Post, new { @class = "form form-horizontal", @id = "frmWarehouses" }))
+            {
+            <div class="modal-body">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Name)
+                    @Html.TextBoxFor(m => m.Name, new {  @class = "form-control", @type = "text" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Phone)
+                    @Html.TextBoxFor(m => m.Phone, new {  @class = "form-control", @type = "tel" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Hotline)
+                    @Html.TextBoxFor(m => m.Hotline, new {  @class = "form-control", @type = "tel" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Address)
+                    @Html.TextBoxFor(m => m.Address, new { @class = "form-control", @type = "text"})
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Website)
+                    @Html.TextBoxFor(m => m.Website, new {  @class = "form-control", @type = "text" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Description)
+                    @Html.TextAreaFor(m => m.Description, new {  @class = "form-control", @type = "text", rows = 3 })
+                </div>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-success">Tạo Mới</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>

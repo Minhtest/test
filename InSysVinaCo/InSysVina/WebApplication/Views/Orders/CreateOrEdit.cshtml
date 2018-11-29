@@ -1,0 +1,273 @@
+﻿@using WebApplication.Authorize
+@using LIB.Warehouses
+@model LIB.OrderEntity
+@{
+    ViewBag.Title = "Đơn hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var acc = User as CustomPrincipal;
+    var AllWarehouse = ViewBag.AllWarehouse as List<WarehousesEntity>;
+}
+@section styles_plugins{
+    <link href="~/Content/css/bootstrap-table.min.css" rel="stylesheet" />
+    <link href="~/Content/css/select2.min.css" rel="stylesheet" />
+    @* use Editable *@
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap-editable.css" />
+    @* end use Editable *@
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap-datepicker3.min.css" />
+}
+@section scripts_plugins{
+    <script src="~/Content/js/bootstrap-table.min.js"></script>
+    <script src="~/Content/js/bootstrap-table-vi-VN.min.js"></script>
+    <script src="~/Content/js/select2.full.min.js"></script>
+    @*<script src="~/Content/js/select2-tab-fix.min.js"></script>*@
+
+    @* use Editable *@
+    <script src="~/Content/js/bootstrap-table-editable.min.js"></script>
+    <script src="~/Content/js/bootstrap-editable.min.js"></script>
+    @* end use Editable *@
+
+    @* Autonumeric *@
+    <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.1.0"></script>
+    @* datepicker *@
+    <script src="~/Content/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/Content/js/bootstrap-datepicker.vi.min.js"></script>
+    <script src="~/Content/js/connectcode-javascript-code128a.js"></script>
+}
+@section scripts{
+    <script src="~/Scripts/controller/Order_CreateOrEdit.js"></script>
+}
+<style type="text/css">
+    .modal-order {
+        width: 400px !important;
+    }
+
+    table.tblPay {
+    }
+
+        table.tblPay tbody th {
+            vertical-align: middle;
+        }
+
+            table.tblPay tbody th label {
+                margin-bottom: 0;
+            }
+
+    .fixed-table-pagination {
+        display: none !important;
+    }
+
+    input[type="radio"] {
+        padding: 5px;
+        background-color: #f60;
+    }
+
+    #tblDataProduct td .input-group {
+        margin-bottom: 0px;
+    }
+
+    input[ipMoney], .ipMoney, .ipDiscount {
+        text-align: right;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__clear {
+        font-size: 18px;
+        padding: 0 5px;
+    }
+
+    table tr .input-group {
+        margin-bottom: 0px;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        top: 50%;
+        margin-top: -13px;
+    }
+
+    .infoall {
+        margin-top: 15px;
+    }
+</style>
+
+
+<div class="panel panel-info">
+
+    <div class="panel-heading">
+        <div class="clearfix">
+            <div class="pull-left">THÔNG TIN ĐƠN HÀNG</div>
+            @{ if (Model.Id != null)
+                {
+                    <div class="pull-right">Mã: <b style="color:red">@Model.OrderCode</b></div>
+                }
+            }
+        </div>
+    </div>
+    @using (Html.BeginForm("", "", FormMethod.Post, new { @class = "form form-horizontal", @id = "frmUpdateOrder" }))
+    {
+        <div class="panel-body">
+            <div class="row">
+
+                @if (acc.IsSupperAdmin)
+                {
+                    <div class="clearfix">
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <span class="input-group-addon">ShowRoom</span>
+                                <select class="form-control" id="drdWarehouse">
+                                    @foreach (var item in AllWarehouse)
+                                    {
+                                        <option value="@item.Id">@item.Name</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <div class="col-sm-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">Tìm khách hàng</span>
+                        <select id="drdCustomer" class="form-control"></select>
+                        <div class="input-group-btn">
+                            <button id="btnAddCustomer" type="button" class="btn btn-primary btn-sm form-control" style="margin-bottom:0;"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="tblCustomerInfo"></div>
+                </div>
+            </div>
+            <div style="width:100%; border: 0.5px dashed #73879C; margin: 0 0 15px 0;"></div>
+
+            @Html.TextBoxFor(m => m.Id, new { @style = "display:none" })
+            @Html.TextBoxFor(m => m.OrderCode, new { @style = "display:none" })
+            <div class="row">
+                @Html.TextBoxFor(m => m.CustomerId, new { @style = "display:none" })
+                <div class="col-sm-12">
+                    <div class="input-group">
+                        <label class="input-group-addon" for="drdProduct">Chọn sản phẩm <b style="color:red">(F2)</b></label>
+                        <select id="drdProduct" class="form-control"></select>
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-primary" id="btnSyncProduct"><i class="fas fa-sync-alt"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <table id="tblDataProduct"></table>
+            <div class="infoall">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div id="CouponInfo"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <table class="table table-hover table-bordered tblPay">
+                            <thead>
+                                <tr>
+                                    <th colspan="3"><h5>Thông tin thanh toán</h5></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>@Html.LabelFor(m => m.ProductTotal)</th>
+                                    <th colspan="2">
+                                        <div id="ProductTotal" style="text-align:right">@Model.ProductTotal</div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">Giảm giá</th>
+                                    <th colspan="2">
+                                        <label class="btn btn-sm btn-default">Coupon <input type="radio" name="opDis" value="1" checked /></label>
+                                        <label class="btn btn-sm btn-default"><input type="radio" name="opDis" value="2" /> Voucher</label>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        <div id="divCoupon" @(Model.Voucher != null ? "hidden" : "")>
+                                            <div class="input-group" style="width:100%">
+                                                <input id="MaxUseCoupon" type="number" style="display:none" />
+                                                @Html.TextBoxFor(m => m.CouponType, new { @type = "number", @style = "display:none" })
+                                                @Html.TextBoxFor(m => m.CouponValue, new { @type = "number", @style = "display:none" })
+                                                @Html.TextBoxFor(m => m.CouponCode, new { @class = "form-control" })
+                                                <span class="input-group-addon" id="btnCheckCoupon" style="min-width:70px">
+                                                    <i id="txtReducedCoupon">Giảm ?</i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div id="divVoucher" @(Model.Voucher == null ? "hidden" : "")>
+                                            <input id="Voucher" name="Voucher" class="form-control" value="@Model.Voucher" ipMoney />
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>@Html.LabelFor(m => m.Discount)</th>
+                                    <th colspan="2"><span id="Discount" style="float:right">@Model.Discount</span></th>
+                                </tr>
+
+                                <tr>
+                                    <th>@Html.LabelFor(m => m.GrandTotal)</th>
+                                    <td style="text-align:right" colspan="2">
+                                        <b id="GrandTotal" style="color:orangered">@Model.GrandTotal</b><i id="ShowPoint" style="display:none">(Tích lũy: <span id="newPoint">0</span> điểm)</i>
+                                    </td>
+                                </tr>
+
+                                <tr id="customerPoint" style="display:none">
+                                    <th colspan="3">
+                                        <label><input type="checkbox" id="checkUsePoint" @(Model.PointUsed != null ? "checked" : "") /> Thanh toán bằng điểm tích lũy</label>
+                                        <input id="ipMoneyAllPoint" value="@Model.PointUsed" class="form-control" style="display:none" />
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">Tiền khách đưa</th>
+                                    <th>
+                                        @Html.LabelFor(t => t.PayCash) <b style="color:red">(F4)</b>
+                                    </th>
+                                    <th>
+                                        <label class="btn btn-default btn-sm"><input type="checkbox" id="checkboxpaybycard" name="checkboxpaybycard" @(Model.PayByCard != null ? "checked" : "")> Bằng thẻ <b style="color:red">(F7)</b></label>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td id="cellPayCash" colspan=@(Model.PayByCard == null ? "2" : "")>
+                                        @Html.TextBoxFor(m => m.PayCash, new { @class = "form-control", @required = "required", @ipMoney = "" })
+                                    </td>
+                                    <td id="cellPayByCard" @(Model.PayByCard == null ? "hidden" : "")>
+                                        @Html.TextBoxFor(m => m.PayByCard, new { @class = "form-control", @required = "required", @ipMoney = "" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>@Html.LabelFor(m => m.RefundMoney)</th>
+                                    <th colspan="2">
+                                        <div id="RefundMoney" style="text-align:right"></div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="panel-footer">
+            <div class="clearfix">
+                <div class="pull-right">
+                    @if (Model.Id == null)
+                    {
+                        <button type="button" class="btn btn-danger" onclick="location.reload()"><i class="fas fa-check-square-o"></i> Hủy</button>
+                        <button type="button" id="btnSaveOrder" data-status="0" class="btn btn-primary"><i class="fas fa-check-square-o"></i> Lưu đơn hàng</button>
+                        <button type="button" id="btnPaymentOrder" data-status="1" class="btn btn-success"><i class="fas fa-check-square-o"></i> Thanh toán <b>(F8)</b></button>
+                    }
+                    else
+                    {
+                        if (Model.Status == 0)
+                        {
+                            <button type="button" id="btnCancel" class="btn btn-danger"><i class="fas fa-check-square-o"></i> Hủy đơn hàng</button>
+                            <button type="button" id="btnSaveOrder" data-status="0" class="btn btn-primary"><i class="fas fa-check-square-o"></i> Lưu đơn hàng</button>
+                            <button type="button" data-status="1" id="btnPaymentOrder" class="btn btn-success"><i class="fas fa-check-square-o"></i> Thanh toán <b>(F8)</b></button>
+
+                        }
+                    }
+
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<div id="BillContent" style="display:none"></div>

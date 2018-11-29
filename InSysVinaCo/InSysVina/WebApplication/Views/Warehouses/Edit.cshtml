@@ -1,0 +1,149 @@
+﻿@model LIB.Warehouses.WarehousesEntity
+@using WebApplication.Authorize
+@{
+    ViewBag.Title = "Thông tin ShowRoom";
+    var userFull = User as CustomPrincipal;
+}
+@section scripts{
+    <script src="~/Scripts/controller/WarehousesUpdate.js"></script>
+}
+<div class="panel panel-info">
+    <div class="panel-heading">Thông tin Showroom</div>
+    @using (Html.BeginForm("UpdateWarehouse", "Warehouses", FormMethod.Post, new { @id = "frmUpdateWarehouses" }))
+    {
+        <div class="panel-body">
+            @Html.TextBoxFor(m => m.Id, htmlAttributes: new { @style = "display:none" })
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="form-group" style="text-align:center">
+                        <label>Logo</label>
+                        <img style="max-width: 250px;margin:auto;display:block" id="ImgAvatar" class="img-thumbnail" src="@Model.Logo" />
+                        <div class="col-sm-12">
+                            <label class="btn btn-primary btn-upload" for="inputImage" title="Upload image file">
+                                <input class="sr-only" id="inputImage" name="file" type="file" accept="image/*">
+                                Thay đổi logo Showroom
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Name)
+                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @required = "required" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Prefix)
+                            @Html.TextBoxFor(m => m.Prefix, new { @class = "form-control", @required = "required" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Address)
+                            @Html.TextBoxFor(m => m.Address, new { @class = "form-control", @required = "required" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Phone)
+                            @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", @type = "tel", @required = "required" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Hotline)
+                            @Html.TextBoxFor(m => m.Hotline, new { @class = "form-control", @type = "tel", @required = "required" })
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Website)
+                            @Html.TextBoxFor(m => m.Website, new { @class = "form-control", @required = "required" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Email)
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @type = "email", @required = "required" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.QuotaPromotion)
+                            @Html.TextBoxFor(m => m.QuotaPromotion, new { @class = "form-control", @required = "required", @ipMoney = "" })
+                        </div>
+                    </div>
+                    @if (userFull.IsSupperAdmin)
+    {
+
+        if (Model.IsSync)
+        {
+                <div class="col-sm-12 col-xs-12">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.IsSync)
+                        <div>
+                            <input type="checkbox" id="IsSync" checked="checked" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xs-12" id="containDrdApi">
+                    <label>Chọn Api</label>
+                    <select id="drdApi" class="form-control" style="width:100%">
+                        @if (ViewBag.ApiConnect != null)
+        {
+            foreach (var item in ViewBag.ApiConnect)
+            {
+                <option value="@item.Id">@item.Name</option>
+}
+}
+                    </select>
+                </div>
+}
+else
+{
+                <div class="col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.IsSync)
+                        <div>
+                            <input type="checkbox" id="IsSync" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xs-12" id="containDrdApi" hidden="hidden">
+                    <label>Chọn Api</label>
+                    <select id="drdApi" class="form-control" style="width:100%">
+                        @if (ViewBag.ApiConnect != null)
+        {
+            foreach (var item in ViewBag.ApiConnect)
+            {
+                <option value="@item.Id">@item.Name</option>
+}
+}
+                    </select>
+                </div>
+}
+
+
+}
+
+                </div>
+            </div>
+
+        </div>
+        <div class="panel-footer">
+            <div class="clearfix">
+                <div class="pull-right">
+                    <a href="/Warehouses"><i class="fas fa-angle-double-left"></i> Quay lại danh sách</a> | <button type="submit" class="btn btn-success">Cập Nhật</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+

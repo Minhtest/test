@@ -1,0 +1,107 @@
+﻿@model LIB.SyncSetting.ApiConnectEntity
+@using WebApplication.Authorize
+@{
+    ViewBag.Title = "Thông tin ApiConnect";
+}
+
+@section scripts{
+    <script src="~/Scripts/controller/SyncSetting_CreateEdit.js"></script>
+}
+<div class="panel panel-info">
+    @if (Model.Id != 0)
+    {
+        <div class="panel-heading">Cập nhật API</div>
+    }
+    else
+    {
+        <div class="panel-heading">Thêm mới API</div>
+    }
+
+    @using (Html.BeginForm("UpdateApiConnect", "SyncSetting", FormMethod.Post, new { @id = "frmCreateEditApiConnect" }))
+    {
+        <div class="panel-body">
+            @Html.TextBoxFor(m => m.Id, htmlAttributes: new { @style = "display:none" })
+            <div class="row">
+                <div class="col-sm-8">
+
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Name)
+                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @required = "required" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Api)
+                            @Html.TextBoxFor(m => m.Api, new { @class = "form-control", @required = "required" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.UserName)
+                            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @required = "required" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.PassWord)
+                            @Html.TextBoxFor(m => m.PassWord, new { @class = "form-control", @required = "required" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Secret)
+                            @Html.TextBoxFor(m => m.Secret, new { @class = "form-control" })
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Token)
+                            @Html.TextBoxFor(m => m.Token, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Type)
+                            @Html.TextBoxFor(m => m.Type, new { @class = "form-control", @required = "required" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Client)
+                            @Html.TextBoxFor(m => m.Client, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label> @Html.CheckBoxFor(m => m.Disabled) &nbsp; Dừng hoạt động</label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="panel-footer">
+            <div class="clearfix">
+                <div class="pull-right">
+                    <a href="/SyncSetting"><i class="fas fa-angle-double-left"></i> Quay lại danh sách</a> |
+                    @if (Model.Id != 0)
+                    {
+                        <button type="submit" class="btn btn-success">Cập nhật</button>
+                    }
+                    else
+                    {
+                        <button type="submit" class="btn btn-success">Thêm mới</button>
+                    }
+
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+

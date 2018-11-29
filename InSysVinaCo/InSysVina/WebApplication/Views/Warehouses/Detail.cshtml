@@ -1,0 +1,35 @@
+﻿@model LIB.Warehouses.WarehousesEntity
+@{
+    ViewBag.Title = "Thông tin Showroom";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Thông tin Showroom: @Model.Name
+    </div>
+    <div class="panel-body">
+        <table class="table table-responsive table-hover table-bordered">
+            <tr>
+                <td colspan="2"><img src="@Model.Logo" style="margin: auto;display: block;" /></td>
+                <td>@Html.LabelFor(t => t.Name)</td>
+                <td>@Html.DisplayFor(t => t.Name)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(t => t.Address)</td>
+                <td>@Html.DisplayFor(t => t.Address)</td>
+                <td>@Html.LabelFor(t => t.Phone)</td>
+                <td>@Html.DisplayFor(t => t.Phone)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(t => t.Hotline)</td>
+                <td>@Html.DisplayFor(t => t.Hotline)</td>
+                <td>@Html.LabelFor(t => t.Website)</td>
+                <td>@Html.DisplayFor(t => t.Website)</td>
+            </tr>
+        </table>
+        <div class="pull-right">
+            <a href="/Warehouses/Edit/@Model.Id" class="btn btn-primary">Chỉnh sửa</a>
+        </div>
+    </div>
+</div>
+

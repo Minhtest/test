@@ -1,0 +1,80 @@
+﻿@model LIB.ReturnEntity
+@using LIB.Warehouses
+@using WebApplication.Authorize
+@{
+    ViewBag.Title = "Danh sách sản phẩm trả hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var AllWarehouse = ViewBag.AllWarehouse as List<WarehousesEntity>;
+    var acc = User as CustomPrincipal;
+}
+@section styles_plugins{
+    <link href="~/Content/css/bootstrap-table.min.css" rel="stylesheet" />
+    <link href="~/Content/css/select2.min.css" rel="stylesheet" />
+    @* use Editable *@
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap-editable.css" />
+    @* end use Editable *@
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap-datepicker3.min.css" />
+}
+@section scripts_plugins{
+    <script src="~/Content/js/bootstrap-table.min.js"></script>
+    <script src="~/Content/js/bootstrap-table-vi-VN.min.js"></script>
+    <script src="~/Content/js/select2.full.min.js"></script>
+    @*<script src="~/Content/js/select2-tab-fix.min.js"></script>*@
+
+    @* use Editable *@
+    <script src="~/Content/js/bootstrap-table-editable.min.js"></script>
+    <script src="~/Content/js/bootstrap-editable.min.js"></script>
+    @* end use Editable *@
+
+    @* Autonumeric *@
+    <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.1.0"></script>
+    @* datepicker *@
+    <script src="~/Content/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/Content/js/bootstrap-datepicker.vi.min.js"></script>
+}
+@section scripts{
+    <script src="~/Scripts/controller/Return_Detail.js"></script>
+}
+<div class="panel panel-info">
+    <div class="panel-heading">
+        Thông Tin Trả Hàng
+    </div>
+    <div class="panel-body">
+        @Html.TextBoxFor(m => m.Id, new { style = "display:none" })
+        <div class="row">
+            @if (acc.IsSupperAdmin)
+            {
+                <div class="col-sm-6">
+                    <div class="input-group">
+                        <label class="input-group-addon" for="">Showroom</label>
+                        <select class="form-control" id="drdWarehouse" disabled>
+                            @foreach (var item in AllWarehouse)
+                            {
+                                <option value="@item.Id" @(Model.WarehouseId == item.Id ? "selected=\"selected\"" : "")>@item.Name</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            }
+            <div class="col-sm-6">
+                <div class="input-group">
+                    <label class="input-group-addon" for="">Đơn Hàng: @Model.OrderCode</label>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <table id="tblDataProduct"></table>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <div class="clearfix">
+            <div class="pull-right">
+                <a href="/Return"><i class="fas fa-angle-double-left"></i> Quay Lại Danh Sách</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
